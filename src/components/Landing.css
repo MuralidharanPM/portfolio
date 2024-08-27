@@ -1,0 +1,216 @@
+.landNavContBtnCls {
+    background: transparent;
+    border: 0px;
+    outline: none;
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.LandingNavContCls {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+.landSecNamingMineCls {
+    font-size: 30px;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.hifiHandsLandLocCls {
+    width: 50px;
+    height: 50px;
+}
+.landSecNamingMineCls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.LandingParentSecCls {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.LandingContentSecCls {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+.landSecLeftPartCls {
+    flex: 1;
+}
+.landSecRightPartCls {
+    flex: 1;
+}
+.bannerLandLocCls {
+    width: 90%;
+    max-width: 100%;
+}
+.landSecLeftPartCls {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    width: 50%;
+}
+.landSecNaming {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.landSecDescriptionMineCls {
+    font-size: 21px;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.landHifiHandCls {
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: hififWave;
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+@keyframes hififWave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(8deg);
+    }
+    20% {
+        transform: rotate(16deg);
+    }
+    30% {
+        transform: rotate(24deg);
+    }
+    40% {
+        transform: rotate(28deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.landMainFuncBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.landBtnMainContComCls {
+    background-color: #2C234B;
+    border-radius: 999999px;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landingMainBtnHeadCls {
+    background: #5F4CA5;
+    border: 0px;
+    outline: none;
+    border-radius: 99999px;
+    padding: 7px 9px 7px 25px;
+    font-size: 21px;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-wrap: nowrap;
+}
+.landSecRightPartCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.landingMainBtnHeadCls:hover .landBtnMainContCls {
+    background-color: #5F4CA5 !important;
+}
+#landNavMainBtnContactMe:hover {
+    background: #2C234B !important;
+}
+.landingMainBtnHeadCls:hover .landBtnMainDresCls {
+    background-color: #5F4CA5 !important;
+}
+#landNavMainBtnDRes:hover {
+    background: #2C234B !important;
+}
+.landSecRightPartCls {
+    position: relative;
+    left: 100%;
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+.landSecLeftPartCls {
+    position: relative;
+    left: -100%;
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+.LandingNavSecCls {
+    position: relative;
+    top: -100%;
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+.landNavContBtnCls::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color:#5F4CA5;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 9999px;
+}
+.landNavContBtnCls:hover::after {
+    transform: scaleX(1); 
+}
+@keyframes slideIn {
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+@media (max-width: 991px) {
+    .landNavContBtnCls, .landSecNamingMineCls {
+        font-size: 26px;
+    }
+    .landSecDescriptionMineCls {
+        font-size: 20px;
+    }
+    .hifiHandsLandLocCls {
+        width: 45px;
+        height: 45px;
+    }
+    .bannerLandLocCls {
+        width: 100%;
+    }
+    .landSecNaming {
+        gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .bannerLandLocCls, .landSecRightPartCls {
+        display: none;
+    }
+}
