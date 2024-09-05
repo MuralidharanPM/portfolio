@@ -17,4 +17,105 @@
 }
 .projectSecContainerCls {
     padding: 40px 20px;
+    background-color: #F0F0F0;
+}
+.projectTabBtnSecCls {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.uiUxProjectBtnCls, .froneEndProjectBtnCls {
+    background-color: #2C234B;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 15px 20px;
+}
+.uiUxProjectBtnCls button, .froneEndProjectBtnCls button {
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.projectSecContentAreaCls {
+    background-color: #5F4CA5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.projectSecContentCls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.projectSecMainParentCls {
+    flex: 1;
+    max-width: 49%;
+    min-width: 48%;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+.projectSecMainBlockCls {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.projectTechStackCls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.projectMainData, .projectMainBanCls {
+    flex: 1;
+}
+.projiTechStackCls {
+    width: 34px;
+    height: 34px;
+}
+.projectMainBanCls img, .ProjTechStackIconCls {
+    max-width: 100%;
+    min-height: 100%;
+}
+.projectMainData {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.projectMainBanCls {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px #0000002b;
+}
+.projectLiveLinkCls {
+    display: flex;
+    justify-content: center;
+}
+.techStackIconsCls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.projectLinkBtnCls {
+    border: 0px;
+    background-color: #5F4CA5;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 999999px;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
 }

@@ -1,0 +1,28 @@
+.contactSecTitleCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.contactTitleHeadIconCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-size: 64px;
+    animation: slideAnimation 1.4s infinite;
+}
+.contactSecContainerCls {
+    padding: 40px 20px;
+}
+@keyframes slideAnimation {
+    0% { background-image: url('../assets/ContactAnimated/contactLogo1-4.png'); }
+    33% { background-image: url('../assets/ContactAnimated/contactLogo2-4.png'); }
+    67% { background-image: url('../assets/ContactAnimated/contactLogo3-4.png'); }
+    100% { background-image: url('../assets/ContactAnimated/contactLogo4-4.png'); }
+}

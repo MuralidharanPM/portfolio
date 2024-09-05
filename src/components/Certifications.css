@@ -1,0 +1,147 @@
+.certifiSecTitleCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.certifiTitleHeadIconCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+.certifiSecContainerCls {
+    padding: 40px 20px;
+}
+.certifiSecContentCls {
+    display: flex;
+    flex-direction: row;
+}
+.certificateContPCls {
+    width: 100%;
+    background-color: #2C234B;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.certifiSecContentCls {
+    background-color: #5F4CA5;
+    border-radius: 25px;
+}
+.certifiSecContentPCls {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.certifiMainBtnCls {
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certifiMainBtnCls {
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    gap: 15px;
+    text-wrap: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+}
+.certificatesListCls {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: #fff;
+}
+.certifiMainBtnLogoCls {
+    width: 50px;
+    height: 50px;
+}
+.certifiMainBtnLogoImgCls {
+    width: 50px;
+    height: 50px;
+}
+.certifiBtnCls {
+    padding: 15px 10px;
+}
+.certificatesListCls {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.certifiSecContentAreaCls, .certifiSecMainBlockCLs {
+    height: 100%;
+}
+.certifiMainData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    max-height: -webkit-fill-available;
+}
+.certifiTechStackLogoListCls, .certifiTechStackLogoIconCls {
+    width: 45px;
+    height: 45px;
+}
+.certifiTechStackHolderCls {
+    display: flex;
+    gap: 10px;
+}
+.mailDropContCls, .socialHandleLogoCls {
+    display: flex;
+    flex-direction: row;
+    width: 62px;
+    height: 62px;
+}
+.mailDropContCls button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.contactSecHeadCls {
+    padding: 40px 20px;
+}
+.contactPagePCls {
+    display: flex;
+    flex-direction: row;
+}
+.contactParentCls, .contactMailParentCls {
+    flex: 1;
+}
+.contactTextOneCls {
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.contactTextTwoCls, .contactTextThreeCls {
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.contactMailParentCls {
+    background-color: #5F4CA5;
+    border-radius: 25px;
+}
