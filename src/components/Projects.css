@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .projectSecTitleCls {
     font-size: 32px;
     font-family: 'Bree Serif', serif;
@@ -19,6 +20,11 @@
     padding: 40px 20px;
     background-color: #F0F0F0;
 }
+.projectSecContainerCls {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
 .projectTabBtnSecCls {
     display: flex;
     flex-direction: row;
@@ -28,9 +34,9 @@
     background-color: #2C234B;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    padding: 15px 20px;
 }
 .uiUxProjectBtnCls button, .froneEndProjectBtnCls button {
+    padding: 15px 20px;
     background-color: transparent;
     outline: none;
     border: 0px;
@@ -94,6 +100,7 @@
     font-size: 20px;
     font-family: 'Bree Serif', serif;
     font-weight: 400;
+    gap: 15px;
 }
 .projectMainBanCls {
     border-radius: 25px;
@@ -118,4 +125,11 @@
     font-size: 16px;
     font-family: 'Bree Serif', serif;
     font-weight: 400;
+}
+@media (max-width: 768px) {
+    .projectSecMainParentCls {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
 }

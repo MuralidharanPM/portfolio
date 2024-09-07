@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .landNavContBtnCls {
     background: transparent;
     border: 0px;
@@ -33,10 +34,10 @@
     gap: 5px;
 }
 .LandingParentSecCls {
-    padding: 20px;
     gap: 20px;
     display: flex;
     flex-direction: column;
+    padding: 45px 20px;
 }
 .LandingContentSecCls {
     display: flex;
@@ -108,6 +109,9 @@
     gap: 15px;
     flex-wrap: wrap;
 }
+.landMainFuncBtn button {
+    box-shadow: 7px 7px 15px #0000002b;
+}
 .landBtnMainContComCls {
     background-color: #2C234B;
     border-radius: 999999px;
@@ -169,6 +173,22 @@
     opacity: 0;
     animation: slideIn 0.8s ease-in-out forwards;
 }
+.MobileHeadCtrlBtnCls::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:#000000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 9999px;
+}
+.MobileHeadCtrlBtnCls:hover::after {
+    transform: scaleX(1); 
+}
 .landNavContBtnCls::after {
     content: '';
     position: absolute;
@@ -185,10 +205,99 @@
 .landNavContBtnCls:hover::after {
     transform: scaleX(1); 
 }
+.mobHeaderBurgPCls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.mobHeaderBurgIconActChCls {
+    background-image: url('../assets/MobileHeader/burgerIonActive.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-size: 55px;
+    outline: none;
+    border: 0px;
+    border-radius: 999999px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.mobHeaderBurgIconChCls {
+    background-image: url('../assets/MobileHeader/burgerIonIdle.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-size: 55px;
+    outline: none;
+    border: 0px;
+    border-radius: 999999px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.laningMobViewContHeadCls {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.MobileHeadCtrlBtnBurgCls {
+    border: 0px;
+    outline: none;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px 20px;
+    color: #5F4CA5;
+    background-color: transparent;
+}
+.MobileHeadCtrlBtnCls {
+    border: 0px;
+    outline: none;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: right;
+    color: #5F4CA5;
+    background-color: transparent;
+    width: fit-content;
+    position: relative;
+}
+.mobViewHeadTitle {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.mobHeaderNameLogoCls {
+    background-repeat: no-repeat;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+.MobileHeadCtrlBtnDivCls {
+    padding: 10px 20px;
+}
 @keyframes slideIn {
     to {
         left: 0;
         opacity: 1;
+    }
+}
+@media (min-width: 769px) {
+    .LandingNavContMobCls {
+        display: none;
     }
 }
 @media (max-width: 991px) {
@@ -210,7 +319,29 @@
     }
 }
 @media (max-width: 768px) {
-    .bannerLandLocCls, .landSecRightPartCls {
+    .bannerLandLocCls, .landSecRightPartCls, .LandingNavSecCls {
         display: none;
+    }
+    .mobViewHeadTitle {
+        width: 80%;
+        height: 80%;
+        max-width: 265px;
+    }
+    .LandingContentSecCls {
+        margin-top: 55px;
+    }
+}
+@media (max-width: 540px) {
+    .mobViewHeadTitle {
+        width: 65%;
+        height: 65%;
+        max-width: 265px;
+    }
+}
+@media (max-width: 420px) {
+    .MobileHeadCtrlBtnBurgCls {
+        width: 45px;
+        height: 45px;
+        background-size: 45px;
     }
 }

@@ -51,7 +51,7 @@ export default function Contact() {
                             <div className="contactMailTitleCls">Drop a Mail</div>
                             <input placeholder="Enter your email id"></input>
                             <input placeholder="Enter your name"></input>
-                            <input placeholder="Enter your message"></input>
+                            <input placeholder="Enter your message" className="contactBoxMessageCls"></input>
                             <button className="dropMailBtnCls">Send<span className="mailSendBtnLogo"></span></button>
                         </div>
                     </div>

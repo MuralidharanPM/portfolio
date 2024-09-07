@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .certifiSecTitleCls {
     font-size: 32px;
     font-family: 'Bree Serif', serif;
@@ -109,39 +110,4 @@
 .certifiTechStackHolderCls {
     display: flex;
     gap: 10px;
-}
-.mailDropContCls, .socialHandleLogoCls {
-    display: flex;
-    flex-direction: row;
-    width: 62px;
-    height: 62px;
-}
-.mailDropContCls button {
-    background: transparent;
-    border: none;
-    outline: none;
-}
-.contactSecHeadCls {
-    padding: 40px 20px;
-}
-.contactPagePCls {
-    display: flex;
-    flex-direction: row;
-}
-.contactParentCls, .contactMailParentCls {
-    flex: 1;
-}
-.contactTextOneCls {
-    font-size: 25px;
-    font-family: 'Bree Serif', serif;
-    font-weight: 400;
-}
-.contactTextTwoCls, .contactTextThreeCls {
-    font-size: 20px;
-    font-family: 'Bree Serif', serif;
-    font-weight: 400;
-}
-.contactMailParentCls {
-    background-color: #5F4CA5;
-    border-radius: 25px;
 }

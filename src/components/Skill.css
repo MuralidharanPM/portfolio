@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .SkillParentSecCls {
     padding: 40px;
-    gap: 30px;
+    gap: 45px;
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
@@ -64,6 +65,8 @@
     border-radius: 18px;
     background-color: #ffff;
     border-radius: 18px;
+    min-width: 65px;
+    min-height: 65px;
 }
 .skillSetDets {
     display: flex;
@@ -82,5 +85,13 @@
         justify-content: center;
         row-gap: 15px;
         column-gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .skillSetHeadCls {
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        overflow-y: scroll;
+        padding: 5px 20px 10px 225px;
     }
 }
