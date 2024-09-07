@@ -126,6 +126,9 @@
     font-family: 'Bree Serif', serif;
     font-weight: 400;
 }
+.activeProjHeadSec {
+    background-color: #5F4CA5 !important;
+}
 @media (max-width: 768px) {
     .projectSecMainParentCls {
         max-width: 100%;

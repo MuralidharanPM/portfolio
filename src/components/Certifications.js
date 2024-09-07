@@ -36,11 +36,14 @@ export default function Certifications() {
         techStack: [ReactLogo, SpringLogo, RestApiLogo, SQLLogo, JavaLogo]
     }];
 
+    const [activeCertifiTab, setActiveCertifiTab] = useState(certificatesSet[0].name);
+
     useEffect(() => {
         certifiBtnFuncReturn(certificatesSet[0].name);
     }, []);
 
     const certifiBtnFuncReturn = (certiButtonSet) => {
+        setActiveCertifiTab(certiButtonSet);
         let tempateToSearch = certificatesSet.filter((item, index) => (item.name === certiButtonSet));
         {
             tempateToSearch.map((item, index) => (
@@ -77,9 +80,9 @@ export default function Certifications() {
                         <div className="certifiSecContentPCls">
                             <div className="certificatesListCls">
                                 {certificatesSet.map((item, index) => (
-                                    <div className="certifiTabBtnSecCls">
+                                    <div className= {activeCertifiTab == item.name ? "certifiTabBtnSecCls activeCertifiTab" : "certifiTabBtnSecCls"}>
                                         <div className="certifiBtnCls">
-                                            <button className="certifiMainBtnCls" onClick={() => certifiBtnFuncReturn(item.name)}><span className="certifiMainBtnLogoCls"><img className="certifiMainBtnLogoImgCls" src={item.logo} alt="Skill Set Head Topic Logo"></img></span>{item.name}</button>
+                                            <button className="certifiMainBtnCls" onClick={() => certifiBtnFuncReturn(item.name)}><span className="certifiMainBtnLogoCls"><img className="certifiMainBtnLogoImgCls" src={item.logo} alt="Skill Set Head Topic Logo"></img></span><span className="certifiItemsLogoCls">{item.name}</span></button>
                                         </div>
                                     </div>
                                 ))}

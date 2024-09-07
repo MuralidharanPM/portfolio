@@ -35,6 +35,7 @@ import PhotoShop from "../assets/SkillLogos/PhotoShopLogo.png";
 
 export default function Projects() {
     const [projectDetails, setProjectTabToDisplay] = useState('');
+    const [activeProjTab, setActiveProjTab] = useState('FrontEnd');
 
     const uiUxProjList = [{
         projectName: "AutoDeals - Car Dealership website Design",
@@ -82,6 +83,7 @@ export default function Projects() {
     }, []);
 
     const projectBtnFuncReturn = (projButtonSet) => {
+        setActiveProjTab(projButtonSet);
         if (projButtonSet === "UIUX") {
             setProjectTabToDisplay(
                 <div className="projectSecContentCls">
@@ -176,17 +178,14 @@ export default function Projects() {
                     Projects<span><img className="projectTitleHeadIconCls" src={ProjectsTitleLogo} alt="Skill Set Head Topic Logo"></img></span>
                 </div>
                 <div className="projectSecContentPCls">
-                    <div className="projectTabBtnSecCls">
-                        <div className="uiUxProjectBtnCls">
-                            <button onClick={() => projectBtnFuncReturn("UIUX")}>UI UX</button>
+                        <div className="projectTabBtnSecCls">
+                            <div className={activeProjTab === 'UIUX' ? 'uiUxProjectBtnCls activeProjHeadSec' : 'uiUxProjectBtnCls'}>
+                                <button onClick={() => projectBtnFuncReturn("UIUX")}>UI UX</button>
+                            </div>
+                            <div className={activeProjTab === 'FrontEnd' ? 'froneEndProjectBtnCls activeProjHeadSec' : 'froneEndProjectBtnCls'}>
+                                <button onClick={() => projectBtnFuncReturn("FrontEnd")}>Front-end</button>
+                            </div>
                         </div>
-                        <div className="froneEndProjectBtnCls">
-                            <button onClick={() => projectBtnFuncReturn("FrontEnd")}>Front-end</button>
-                        </div>
-                        {/* <div className="fullStackProjectBtnCls">
-                            <button onClick={() => projectBtnFuncReturn("FullStack")}>Full Stack</button>
-                        </div> */}
-                    </div>
                     <div className="projectSecContentAreaCls">{projectDetails}</div>
                 </div>
             </div>

@@ -91,6 +91,7 @@
     background-color: #fff;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    overflow: hidden;
 }
 .certifiSecContentAreaCls, .certifiSecMainBlockCLs {
     height: 100%;
@@ -110,4 +111,27 @@
 .certifiTechStackHolderCls {
     display: flex;
     gap: 10px;
+}
+.activeCertifiTab {
+    background-color: #2C234B !important;
+}
+@media (max-width: 768px) {
+    .certifiItemsLogoCls {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    .landingMainBtnHeadCls {
+        text-wrap: wrap !important;
+    }
+    .landBtnMainContComCls {
+        min-width: 60px;
+        min-height: 60px;
+    }
+    .projectTabBtnSecCls {
+        gap: 20px !important;
+    }
+    .uiUxProjectBtnCls button, .froneEndProjectBtnCls button {
+        padding: 10px 15px !important;
+    }
 }
