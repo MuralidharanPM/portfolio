@@ -26,10 +26,6 @@ import Json from "../assets/SkillLogos/JsonLogo.png";
 import SpringMVC from "../assets/SkillLogos/SpringLogo.png";
 import RestAPI from "../assets/SkillLogos/RestApiLogo.png";
 import SVN from "../assets/SkillLogos/svnLogo.png";
-import FiveStar from "../assets/SkillStars/5-Star-Type-2.png";
-import FourStar from "../assets/SkillStars/4-Star-Type-2.png";
-import ThreeStar from "../assets/SkillStars/3-Star-Type-2.png";
-import TwoStar from "../assets/SkillStars/2-Star-Type-2.png";
 import Spline from "../assets/SkillLogos/splineLogo.png";
 import PhotoShop from "../assets/SkillLogos/PhotoShopLogo.png";
 
@@ -52,27 +48,27 @@ export default function Projects() {
     const frontEndProjList = [{
         projectName: "DoLearn E-Learning website",
         projectBanner: DoLearn,
-        projectTechStac: [Figma, Spline, PhotoShop],
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://www.google.com/"
     }, {
         projectName: "Rock Paper Scissor - Website",
         projectBanner: RockPaperScissor,
-        projectTechStac: [Figma, Spline, PhotoShop],
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://www.google.com/"
     }, {
         projectName: "Weather App - Get weather with zipcode",
         projectBanner: WeatherApp,
-        projectTechStac: [Figma, Spline, PhotoShop],
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
         projectLiveLink: "https://www.google.com/"
     }, {
         projectName: "Learning Alliance E-Learning website",
         projectBanner: LearningAlliance,
-        projectTechStac: [Figma, Spline, PhotoShop],
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://www.google.com/"
     }, {
         projectName: "Portfolio website for professionals",
         projectBanner: Portfolio,
-        projectTechStac: [Figma, Spline, PhotoShop],
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
         projectLiveLink: "https://www.google.com/"
     }]
 
