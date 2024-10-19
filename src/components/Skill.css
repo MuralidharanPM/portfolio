@@ -73,6 +73,7 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    text-align: center;
 }
 .skillSetCardHeadCls:hover {
     background-color: #2C234B !important;
@@ -85,5 +86,66 @@
         justify-content: center;
         row-gap: 15px;
         column-gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .skillTitleHeadCls {
+        font-size: 26px;
+    }
+    .SkillParentSecCls {
+        gap: 35px;
+    }
+    .skillSetDets {
+        flex: 0;
+    }
+    .skillSetHeadCls {
+        font-size: 16px;
+        grid-template-columns: 22% 22% 22% 22%;
+    }
+    .skillSetCardHeadCls {
+        flex-direction: column-reverse;
+        background-color: #fff;
+        gap: 0px;
+        box-shadow: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .skillSetCardHeadCls:hover {
+        background-color: #fff !important;
+    }
+    .skillSetTitle {
+        color: #000;
+    }
+    .skillSetRatingLogoCls, .skillSetRating {
+        display: none;
+    }
+    .skillSetLogo {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffff;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+    .SkillParentSecCls {
+        padding: 20px;
+    }
+}
+@media (max-width: 540px) {
+    .skillSetCardHeadCls {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .skillSetHeadCls {
+        font-size: 16px;
+        grid-template-columns: 30% 30% 30%;
     }
 }

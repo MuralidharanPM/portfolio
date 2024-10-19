@@ -5,7 +5,7 @@ import CogiLogo from "../assets/Experience/CogniLogoRendered.png";
 import React, { useState } from "react";
 
 export default function Experience() {
-    const startDate = new Date('2022-06-21');
+    const startDate = new Date('2022-02-21');
     const currentDate = new Date();
     const yearsDiff = (currentDate - startDate) / (1000 * 60 * 60 * 24 * 365.25);
     const yearsOfExperience = yearsDiff.toFixed(1);

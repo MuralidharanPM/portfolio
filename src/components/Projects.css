@@ -58,6 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    width: 100%;
 }
 .projectSecMainParentCls {
     flex: 1;
@@ -74,6 +75,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    background-color: #000000d1;
 }
 .projectTechStackCls {
     display: flex;
@@ -101,6 +103,7 @@
     font-family: 'Bree Serif', serif;
     font-weight: 400;
     gap: 15px;
+    color: #fff;
 }
 .projectMainBanCls {
     border-radius: 25px;
@@ -114,7 +117,9 @@
 .techStackIconsCls {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .projectLinkBtnCls {
     border: 0px;
@@ -134,5 +139,29 @@
         max-width: 100%;
         min-width: 100%;
         width: 100%;
+    }
+    .projectSecTitleCls {
+        font-size: 26px;
+    }
+}
+@media (max-width: 700px) {
+    .projectMainBanCls {
+        display: none;
+    }
+    .projectMainData {
+        align-items: center;
+        text-align: center;
+    }
+    .projectTechStackCls {
+        justify-content: center;
+    }
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+    .projectMainBanCls {
+        display: none;
+    }
+    .projectMainData {
+        align-items: center;
+        text-align: center;
     }
 }

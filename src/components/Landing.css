@@ -301,6 +301,10 @@
     }
 }
 @media (max-width: 991px) {
+    .landBtnMainContComCls {
+        width: 55px;
+        height: 55px;
+    }
     .landNavContBtnCls, .landSecNamingMineCls {
         font-size: 26px;
     }

@@ -66,7 +66,7 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://www.google.com/"
     }, {
-        projectName: "Portfolio website for professionals",
+        projectName: "Portfolio website",
         projectBanner: Portfolio,
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
         projectLiveLink: "https://www.google.com/"
@@ -84,7 +84,12 @@ export default function Projects() {
             setProjectTabToDisplay(
                 <div className="projectSecContentCls">
                     {uiUxProjList.map((item, index) => (
-                        <div className="projectSecMainParentCls">
+                        <div className="projectSecMainParentCls" style={{
+                            'background-image': `url(${item.projectBanner})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            width: '100%'
+                        }}>
                             <div className="projectSecMainBlockCls">
                                 <div className="projectMainData">
                                     <div className="projectTitleCls">{item.projectName}</div>
@@ -112,26 +117,31 @@ export default function Projects() {
             setProjectTabToDisplay(
                 <div className="projectSecContentCls">
                     {frontEndProjList.map((item, index) => (
-                        <div className="projectSecMainParentCls">
-                            <div className="projectSecMainBlockCls">
-                                <div className="projectMainData">
-                                    <div className="projectTitleCls">{item.projectName}</div>
-                                    <div className="projectTechStackCls">
-                                        <div className="techStackTitleCls">Tech Stack : </div>
-                                        <div className="techStackIconsCls">
-                                            {(item.projectTechStac).map((image, index) => (
-                                                <span className="projiTechStackCls"><img className="ProjTechStackIconCls" src={image} alt="Skill Set Head Topic Logo"></img></span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="projectLiveLinkCls">
-                                        <button className="projectLinkBtnCls" onClick={() => window.open(item.projectLiveLink)}>Explore Live</button>
+                        <div className="projectSecMainParentCls" style={{
+                            'background-image': `url(${item.projectBanner})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            width: '100%'
+                        }}>
+                        <div className="projectSecMainBlockCls">
+                            <div className="projectMainData">
+                                <div className="projectTitleCls">{item.projectName}</div>
+                                <div className="projectTechStackCls">
+                                    <div className="techStackTitleCls">Tech Stack : </div>
+                                    <div className="techStackIconsCls">
+                                        {(item.projectTechStac).map((image, index) => (
+                                            <span className="projiTechStackCls"><img className="ProjTechStackIconCls" src={image} alt="Skill Set Head Topic Logo"></img></span>
+                                        ))}
                                     </div>
                                 </div>
-                                <div className="projectMainBanCls">
-                                    <img className="projectThumbnailCls" src={item.projectBanner} alt="Skill Set Head Topic Logo"></img>
+                                <div className="projectLiveLinkCls">
+                                    <button className="projectLinkBtnCls" onClick={() => window.open(item.projectLiveLink)}>Explore Live</button>
                                 </div>
                             </div>
+                            <div className="projectMainBanCls">
+                                <img className="projectThumbnailCls" src={item.projectBanner} alt="Skill Set Head Topic Logo"></img>
+                            </div>
+                        </div>
                         </div>
                     ))}
                 </div>
@@ -174,14 +184,14 @@ export default function Projects() {
                     Projects<span><img className="projectTitleHeadIconCls" src={ProjectsTitleLogo} alt="Skill Set Head Topic Logo"></img></span>
                 </div>
                 <div className="projectSecContentPCls">
-                        <div className="projectTabBtnSecCls">
-                            <div className={activeProjTab === 'UIUX' ? 'uiUxProjectBtnCls activeProjHeadSec' : 'uiUxProjectBtnCls'}>
-                                <button onClick={() => projectBtnFuncReturn("UIUX")}>UI UX</button>
-                            </div>
-                            <div className={activeProjTab === 'FrontEnd' ? 'froneEndProjectBtnCls activeProjHeadSec' : 'froneEndProjectBtnCls'}>
-                                <button onClick={() => projectBtnFuncReturn("FrontEnd")}>Front-end</button>
-                            </div>
+                    <div className="projectTabBtnSecCls">
+                        <div className={activeProjTab === 'UIUX' ? 'uiUxProjectBtnCls activeProjHeadSec' : 'uiUxProjectBtnCls'}>
+                            <button onClick={() => projectBtnFuncReturn("UIUX")}>UI UX</button>
                         </div>
+                        <div className={activeProjTab === 'FrontEnd' ? 'froneEndProjectBtnCls activeProjHeadSec' : 'froneEndProjectBtnCls'}>
+                            <button onClick={() => projectBtnFuncReturn("FrontEnd")}>Front-end</button>
+                        </div>
+                    </div>
                     <div className="projectSecContentAreaCls">{projectDetails}</div>
                 </div>
             </div>

@@ -20,19 +20,19 @@ export default function Certifications() {
         name: "Microsoft Azure",
         logo: AzureLogo,
         title: "Microsoft Azure",
-        content: "sample sample",
+        content: "Certified in Microsoft Azure AI Fundamentals (AI-900) and Microsoft Azure Fundamentals (AZ-900), demonstrating foundational knowledge in AI and cloud computing concepts, services, and solutions on the Azure platform.",
         techStack: [AzureTechLogo]
     }, {
         name: "Google UX Design",
         logo: GoogleLogo,
         title: "Google UX Design",
-        content: "sample sample sample",
+        content: "Certified in Google UX Design, proficient in user-centered design principles, wireframing, prototyping, and usability testing to create engaging and effective user experiences across digital platforms.",
         techStack: [FigmaLogo]
     }, {
-        name: "Full Stack Development",
+        name: "Full Stack",
         logo: FullStackLogo,
         title: "Full Stack Development",
-        content: "sample sample sample sample sample",
+        content: "Full Stack Developer with expertise in React, Spring MVC, REST APIs, SQL, Git, and Java. Skilled in building dynamic front-end interfaces, developing back-end services, and managing databases for scalable web applications.",
         techStack: [ReactLogo, SpringLogo, RestApiLogo, SQLLogo, JavaLogo]
     }];
 

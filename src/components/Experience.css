@@ -116,6 +116,15 @@
     .experienceCardSetPCls {
         flex-direction: column;
     }
+    .expULListHeadCls {
+        font-size: 20px;
+    }
+    .experienceSecTitleCls {
+        font-size: 26px;
+    }
+    .experienceParentClass {
+        gap: 35px;
+    }
     .expCardPCls {
         max-width: 80%;
         width: 100%;
@@ -123,6 +132,26 @@
     }
     .experienceBannerCls {
         display: none;
+    }
+    .expCardDynContBtnCls {
+        font-size: 18px;
+    }
+    .expCardLogoSectionCls img {
+        max-width: 140px;
+        max-height: 95px;
+        min-width: 140px;
+        min-height: 95px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .expCardCOntSectionCls {
+        font-size: 20px;
+    }
+    .expCardDynContCls {
+        font-size: 16px;
+    }
+    .expCardDynSecCls, .expCardCOntSectionCls {
+        padding: 15px;
     }
 }
 @media (max-width: 480px) {
