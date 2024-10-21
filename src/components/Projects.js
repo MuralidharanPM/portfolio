@@ -8,9 +8,6 @@ import DoLearn from "../assets/Projects/doLearnLogo.PNG";
 import LearningAlliance from "../assets/Projects/learningAllianceLogo.PNG";
 import RockPaperScissor from "../assets/Projects/rockPaperScissorLogo.PNG";
 import WeatherApp from "../assets/Projects/weatherAppLogo.PNG";
-
-
-import AngularLogo from "../assets/SkillLogos/AngularLogo.png";
 import ReactLogo from "../assets/SkillLogos/ReactLogo.png";
 import JavaScript from "../assets/SkillLogos/JavaScriptLogo.png";
 import Typescript from "../assets/SkillLogos/TypeScriptLogo.png";
@@ -19,13 +16,8 @@ import Figma from "../assets/SkillLogos/FigmaLogo.png";
 import HTML from "../assets/SkillLogos/HTMLLogo.png";
 import CSS from "../assets/SkillLogos/CSSLogo.png";
 import Bootstrap from "../assets/SkillLogos/BootstrapLogo.png";
-import RxJS from "../assets/SkillLogos/RxjsLogo.png";
-import SQL from "../assets/SkillLogos/sqlLogo.png";
-import Java from "../assets/SkillLogos/JavaLogo.png";
 import Json from "../assets/SkillLogos/JsonLogo.png";
-import SpringMVC from "../assets/SkillLogos/SpringLogo.png";
 import RestAPI from "../assets/SkillLogos/RestApiLogo.png";
-import SVN from "../assets/SkillLogos/svnLogo.png";
 import Spline from "../assets/SkillLogos/splineLogo.png";
 import PhotoShop from "../assets/SkillLogos/PhotoShopLogo.png";
 
@@ -37,39 +29,39 @@ export default function Projects() {
         projectName: "AutoDeals - Car Dealership website Design",
         projectBanner: AutoDeals,
         projectTechStac: [Figma, Spline, PhotoShop],
-        projectLiveLink: "https://www.google.com/"
+        projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership"
     }, {
         projectName: "Portfolio website Design",
         projectBanner: Portfolio,
         projectTechStac: [Figma, Spline, PhotoShop],
-        projectLiveLink: "https://www.google.com/"
+        projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1"
     }]
 
     const frontEndProjList = [{
-        projectName: "DoLearn E-Learning website",
-        projectBanner: DoLearn,
-        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
-        projectLiveLink: "https://www.google.com/"
-    }, {
         projectName: "Rock Paper Scissor - Website",
         projectBanner: RockPaperScissor,
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
-        projectLiveLink: "https://www.google.com/"
+        projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/"
     }, {
         projectName: "Weather App - Get weather with zipcode",
         projectBanner: WeatherApp,
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
-        projectLiveLink: "https://www.google.com/"
+        projectLiveLink: "https://muralidharanpm.github.io/weatherapp/"
     }, {
         projectName: "Learning Alliance E-Learning website",
         projectBanner: LearningAlliance,
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
-        projectLiveLink: "https://www.google.com/"
+        projectLiveLink: "https://muralidharanpm.github.io/learningAlliance/"
     }, {
         projectName: "Portfolio website",
         projectBanner: Portfolio,
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
-        projectLiveLink: "https://www.google.com/"
+        projectLiveLink: "https://muralidharanpm.github.io/portfolio/"
+    }, {
+        projectName: "DoLearn E-Learning website",
+        projectBanner: DoLearn,
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
+        projectLiveLink: "https://muralidharanpm.github.io/dolearn/"
     }]
 
     const fullStackProjList = []

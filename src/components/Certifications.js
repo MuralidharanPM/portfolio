@@ -4,7 +4,6 @@ import AzureLogo from "../assets/CertificationsLogo/azureLogo.png";
 import React, { useState, useEffect } from "react";
 import FullStackLogo from "../assets/CertificationsLogo/FullStackLogo.png";
 import GoogleLogo from "../assets/CertificationsLogo/googleLogo.png";
-
 import AzureTechLogo from "../assets/CertificationsLogo/azureLogoType2.png";
 import FigmaLogo from "../assets/SkillLogos/FigmaLogo.png";
 import ReactLogo from "../assets/SkillLogos/ReactLogo.png";

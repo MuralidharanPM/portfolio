@@ -4,10 +4,20 @@ import ContactMainBtnIcon from "../assets/contactIcon.png";
 import DresMainBtnIcon from "../assets/downloadResumeIcon.png";
 import nameLogo from "../assets/MobileHeader/NameLogo.png";
 import React, { useState } from "react";
+import Resume from "../assets/Files/Muralidharan_P.M_Resume_Download.pdf";
 import "../components/Landing.css";
 
-export default function Landing() {
+export default function Landing({ scrollToSkill, scrollToExperience, scrollToProjects, scrollToCertifications, scrollToContact }) {
     const [mobHeaderExpanded, setMobHeaderExpanded] = useState(false);
+    const downloadPDF = () => {
+        const fileUrl = Resume;
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.setAttribute('download', 'Muralidharan_P.M_Resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };    
     return (
         <>
             <div className="LandingParentSecCls">
@@ -28,19 +38,19 @@ export default function Landing() {
                             mobHeaderExpanded ? (
                                 <div className="laningMobViewContHeadCls">
                                     <div className="MobileHeadCtrlBtnDivCls">
-                                        <button className="MobileHeadCtrlBtnCls" id="landNavContactBtnMob">Contact</button>
+                                        <button className="MobileHeadCtrlBtnCls" id="landNavContactBtnMob" onClick={scrollToContact}>Contact<span className="contactNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                     <div className="MobileHeadCtrlBtnDivCls">
-                                        <button className="MobileHeadCtrlBtnCls" id="landNavSillsBtnMob">Skills</button>
+                                        <button className="MobileHeadCtrlBtnCls" id="landNavSillsBtnMob" onClick={scrollToSkill}>Skills<span className="skillsNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                     <div className="MobileHeadCtrlBtnDivCls">
-                                        <button className="MobileHeadCtrlBtnCls" id="landNavExpBtnMob">Experience</button>
+                                        <button className="MobileHeadCtrlBtnCls" id="landNavExpBtnMob" onClick={scrollToExperience}>Experience<span className="experienceNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                     <div className="MobileHeadCtrlBtnDivCls">
-                                        <button className="MobileHeadCtrlBtnCls" id="landNavCertifiBtnMob">Certification</button>
+                                        <button className="MobileHeadCtrlBtnCls" id="landNavCertifiBtnMob" onClick={scrollToCertifications}>Certification<span className="certificateNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                     <div className="MobileHeadCtrlBtnDivCls">
-                                        <button className="MobileHeadCtrlBtnCls" id="landNavProjectsBtnMob">Projects</button>
+                                        <button className="MobileHeadCtrlBtnCls" id="landNavProjectsBtnMob" onClick={scrollToProjects}>Projects<span className="projectsNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                 </div>
                                 ) : (<div></div>)
@@ -49,11 +59,11 @@ export default function Landing() {
                 </div>
                 <div className="LandingNavSecCls">
                     <div className="LandingNavContCls">
-                        <button className="landNavContBtnCls" name="landNavContactBtn" id="landNavContactBtn">Contact</button>
-                        <button className="landNavContBtnCls" name="landNavSillsBtn" id="landNavSillsBtn">Skills</button>
-                        <button className="landNavContBtnCls" name="landNavExpBtn" id="landNavExpBtn">Experience</button>
-                        <button className="landNavContBtnCls" name="landNavCertifiBtn" id="landNavCertifiBtn">Certification</button>
-                        <button className="landNavContBtnCls" name="landNavProjectsBtn" id="landNavProjectsBtn">Projects</button>
+                        <button className="landNavContBtnCls" name="landNavContactBtn" id="landNavContactBtn" onClick={scrollToContact}>Contact</button>
+                        <button className="landNavContBtnCls" name="landNavSillsBtn" id="landNavSillsBtn" onClick={scrollToSkill}>Skills</button>
+                        <button className="landNavContBtnCls" name="landNavExpBtn" id="landNavExpBtn" onClick={scrollToExperience}>Experience</button>
+                        <button className="landNavContBtnCls" name="landNavCertifiBtn" id="landNavCertifiBtn" onClick={scrollToCertifications}>Certification</button>
+                        <button className="landNavContBtnCls" name="landNavProjectsBtn" id="landNavProjectsBtn" onClick={scrollToProjects}>Projects</button>
                     </div>
                 </div>
                 <div className="LandingContentSecCls">
@@ -66,8 +76,8 @@ export default function Landing() {
                             </div>
                         </div>
                         <div className="landMainFuncBtn">
-                            <button className="landingMainBtnHeadCls" name="landNavMainBtnContactMe" id="landNavMainBtnContactMe">Contact Me<span className="landBtnMainContCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={ContactMainBtnIcon} alt="hifiHandLaningPage"></img></span></button>
-                            <button className="landingMainBtnHeadCls" name="landNavMainBtnDRes" id="landNavMainBtnDRes">Download Resume<span className="landBtnMainDresCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={DresMainBtnIcon} alt="hifiHandLaningPage"></img></span></button>
+                            <button className="landingMainBtnHeadCls" name="landNavMainBtnContactMe" id="landNavMainBtnContactMe" onClick={scrollToContact}>Contact Me<span className="landBtnMainContCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={ContactMainBtnIcon} alt="hifiHandLaningPage"></img></span></button>
+                            <button className="landingMainBtnHeadCls" name="landNavMainBtnDRes" id="landNavMainBtnDRes" onClick={downloadPDF}>Download Resume<span className="landBtnMainDresCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={DresMainBtnIcon} alt="hifiHandLaningPage"></img></span></button>
                         </div>
                     </div>
                     <div className="landSecRightPartCls">

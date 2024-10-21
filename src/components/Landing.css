@@ -289,6 +289,39 @@
 .MobileHeadCtrlBtnDivCls {
     padding: 10px 20px;
 }
+.MobileHeadCtrlBtnCls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.contactNavIconCls {
+    background-image: url('../assets/ContactAnimated/contactLogo4-4.png');
+}
+.skillsNavIconCls {
+    background-image: url('../assets/skillSetHeadLogo.png');
+}
+.experienceNavIconCls {
+    background-image: url('../assets/experienceIcon.png');
+}
+.certificateNavIconCls {
+    background-image: url('../assets/CertificationsLogo/certificationsTitleLogo.png');
+}
+.projectsNavIconCls {
+    background-image: url('../assets/ProjectsTitleLogo.png');
+}
+.mobNavTabComStyles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    outline: none;
+    border: 0px;
+    overflow: hidden;
+    background-color: transparent;
+}
 @keyframes slideIn {
     to {
         left: 0;

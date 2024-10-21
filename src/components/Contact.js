@@ -13,7 +13,7 @@ export default function Contact() {
     }, {
         name: "GitHub",
         logo: GitHub,
-        link: "https://www.google.com/"
+        link: "https://github.com/MuralidharanPM"
     }, {
         name: "Naukri",
         logo: Naukri,
