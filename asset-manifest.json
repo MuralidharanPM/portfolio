@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bea5923a.css",
-    "main.js": "/portfolio/static/js/main.7ab752a6.js",
+    "main.css": "/portfolio/static/css/main.4c4ef71f.css",
+    "main.js": "/portfolio/static/js/main.ef3845c1.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/autoDealsLogo.PNG": "/portfolio/static/media/autoDealsLogo.282c1f922dba7cb48430.PNG",
     "static/media/learningAllianceLogo.PNG": "/portfolio/static/media/learningAllianceLogo.14e414d76a2dd5e48a9a.PNG",
@@ -16,6 +16,7 @@
     "static/media/LinkedInContLogo.png": "/portfolio/static/media/LinkedInContLogo.bd68c2219065139169c9.png",
     "static/media/googleLogo.png": "/portfolio/static/media/googleLogo.3340c261e322cba987e3.png",
     "static/media/certificationsTitleLogo.png": "/portfolio/static/media/certificationsTitleLogo.f0b94ecd388faaac4cce.png",
+    "static/media/Muralidharan_P.M_Resume_Download.pdf": "/portfolio/static/media/Muralidharan_P.M_Resume_Download.63d9b8847c453002e26a.pdf",
     "static/media/doLearnLogo.PNG": "/portfolio/static/media/doLearnLogo.dd4eb3c0f550b34b59e4.PNG",
     "static/media/BootstrapLogo.png": "/portfolio/static/media/BootstrapLogo.0739085aace9d2025c83.png",
     "static/media/RxjsLogo.png": "/portfolio/static/media/RxjsLogo.a3f57c9dc40aeb66a624.png",
@@ -57,12 +58,12 @@
     "static/media/burgerIonActive.png": "/portfolio/static/media/burgerIonActive.08edd68fd6078eeaf4d3.png",
     "static/media/NameLogo.png": "/portfolio/static/media/NameLogo.496904f41e8b1a57b899.png",
     "index.html": "/portfolio/index.html",
-    "main.bea5923a.css.map": "/portfolio/static/css/main.bea5923a.css.map",
-    "main.7ab752a6.js.map": "/portfolio/static/js/main.7ab752a6.js.map",
+    "main.4c4ef71f.css.map": "/portfolio/static/css/main.4c4ef71f.css.map",
+    "main.ef3845c1.js.map": "/portfolio/static/js/main.ef3845c1.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bea5923a.css",
-    "static/js/main.7ab752a6.js"
+    "static/css/main.4c4ef71f.css",
+    "static/js/main.ef3845c1.js"
   ]
 }
