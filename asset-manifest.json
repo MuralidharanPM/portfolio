@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.322c933e.css",
+    "main.css": "/portfolio/static/css/main.43078f21.css",
     "main.js": "/portfolio/static/js/main.96c82210.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/autoDealsLogo.PNG": "/portfolio/static/media/autoDealsLogo.282c1f922dba7cb48430.PNG",
@@ -62,12 +62,12 @@
     "static/media/burgerIonActive.png": "/portfolio/static/media/burgerIonActive.08edd68fd6078eeaf4d3.png",
     "static/media/NameLogo.png": "/portfolio/static/media/NameLogo.496904f41e8b1a57b899.png",
     "index.html": "/portfolio/index.html",
-    "main.322c933e.css.map": "/portfolio/static/css/main.322c933e.css.map",
+    "main.43078f21.css.map": "/portfolio/static/css/main.43078f21.css.map",
     "main.96c82210.js.map": "/portfolio/static/js/main.96c82210.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.322c933e.css",
+    "static/css/main.43078f21.css",
     "static/js/main.96c82210.js"
   ]
 }
