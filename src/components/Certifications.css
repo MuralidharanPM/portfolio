@@ -198,4 +198,7 @@
     .certifiBtnCls {
         padding: 12px 7px;
     }
+    .certifiSecContentPCls {
+        padding: 15px;
+    }
 }
