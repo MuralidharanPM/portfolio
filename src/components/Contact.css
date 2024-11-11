@@ -36,11 +36,16 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+.socialHandleLogoCls {
+    max-height: 62px;
+    object-fit: contain;
+}
 .mailDropContCls button {
     background: transparent;
     border: none;
     outline: none;
     height: 62px;
+    max-width: 62px;
 }
 .contactSecHeadCls {
     padding: 40px 20px;
