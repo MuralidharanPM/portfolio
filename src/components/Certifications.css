@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.certifiSecTitleCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.certifiTitleHeadIconCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+.certifiSecContainerCls {
+    padding: 40px 20px;
+}
+.certifiSecContentCls {
+    display: flex;
+    flex-direction: row;
+}
+.certificateContPCls {
+    width: 100%;
+    background-color: #2C234B;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.certifiSecContentCls {
+    background-color: #5F4CA5;
+    border-radius: 25px;
+}
+.certifiSecContentPCls {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.certifiMainBtnCls {
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    gap: 15px;
+    text-wrap: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+}
+.certifiMainTechStackCls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.certifiMainDataTxtCls {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.certifiTitleContCls {
+    font-size: 18px;
+}
+.certifiMainBtnLogoCls {
+    width: 50px;
+    height: 50px;
+}
+.certifiMainBtnLogoImgCls {
+    width: 50px;
+    height: 50px;
+}
+.certifiBtnCls {
+    padding: 15px 10px;
+}
+.certificatesListCls {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.certifiTabBtnSecCls {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.certificatesListCls>div:first-child {
+    border-top-left-radius: 25px;
+}
+.certificatesListCls>div:last-child {
+    border-bottom-left-radius: 25px;
+}
+.certifiSecContentAreaCls, .certifiSecMainBlockCLs {
+    height: 100%;
+}
+.certifiMainData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    max-height: -webkit-fill-available;
+    gap: 20px;
+}
+.certifiTechStackLogoListCls, .certifiTechStackLogoIconCls {
+    width: 45px;
+    height: 45px;
+}
+.certifiTechStackHolderCls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.activeCertifiTab {
+    background-color: #2C234B !important;
+}
+.activeCertifiTab .certifiItemsLogoCls {
+    color: #fff !important;
+}
+@media (max-width: 500px) {
+    .certifiSecContentPCls {
+        flex-direction: column;
+    }
+    .certificatesListCls {
+        flex-direction: row;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 25px;
+    }
+    .certificateContPCls {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+    }
+    .certifiTabBtnSecCls {
+        justify-content: center;
+    }
+    .certificatesListCls>div:last-child {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .certifiItemsLogoCls {
+        display: none;
+    }
+    .certifiSecTitleCls {
+        font-size: 26px;
+    }
+}
+@media (max-width: 420px) {
+    .landingMainBtnHeadCls {
+        text-wrap: wrap !important;
+    }
+    .projectTabBtnSecCls {
+        gap: 20px !important;
+    }
+    .uiUxProjectBtnCls button, .froneEndProjectBtnCls button {
+        padding: 10px 15px !important;
+    }
+}

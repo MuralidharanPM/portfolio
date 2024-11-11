@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.contactSecTitleCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.contactTitleHeadIconCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-size: 55px;
+    animation: slideAnimation 1.4s infinite;
+}
+.contactSecContainerCls {
+    padding: 40px 20px;
+}
+@keyframes slideAnimation {
+    0% { background-image: url('../assets/ContactAnimated/contactLogo1-4.png'); }
+    33% { background-image: url('../assets/ContactAnimated/contactLogo2-4.png'); }
+    67% { background-image: url('../assets/ContactAnimated/contactLogo3-4.png'); }
+    100% { background-image: url('../assets/ContactAnimated/contactLogo4-4.png'); }
+}
+
+.mailDropContCls, .socialHandleLogoCls {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mailDropContCls button {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 62px;
+}
+.contactSecHeadCls {
+    padding: 40px 20px;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.contactPagePCls {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+.contactParentCls, .contactMailParentCls {
+    flex: 1;
+}
+.contactTextOneCls {
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.contactTextTwoCls, .contactTextThreeCls {
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.contactMailParentCls {
+    background-color: #5F4CA5;
+    border-radius: 25px;
+}
+.contactMailSubCls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    text-align: center;
+}
+.contactMailSubCls input {
+    padding: 10px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: 0px;
+    min-height: 25px;
+}
+.contactMailTitleCls {
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.contactBoxMessageCls {
+    min-height: 75px !important;
+}
+.contactMailSubCls input {
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+}
+.contactParentCls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dropMailBtnCls {
+    margin-top: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 99999px;
+    border: 0px;
+    outline: none;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    background-color: #2C234B;
+    color: #fff;
+    align-items: center;
+    gap: 5px;
+}
+.textAreaPCls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mailSendBtnLogo {
+    background-image: url('../assets/Contact/sendBtn.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25px;
+    height: 23px;
+    background-size: 25px 23px;
+}
+.contactBoxMessageCls::placeholder {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+.certifiSecContainerPCls {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+@media (max-width:768px) {
+    .contactPagePCls {
+        flex-direction: column;
+        gap: 45px;
+    }
+    .contactParentCls {
+        align-items: center;
+    }
+    .textAreaPCls {
+        text-align: center;
+    }
+    .mailDropContCls {
+        justify-content: center;
+    }
+    .contactMailParentCls {
+        width: 100%;
+        max-width: 80%;
+    }
+}
+@media (max-width:560px) {
+    .contactMailParentCls {
+        width: 100%;
+        max-width: 100%;
+    }
+}

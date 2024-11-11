@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.experienceTitleHeadIconCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+.experienceSecTitleCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.experienceParentClass {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.experienceContentCls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    width: 100%;
+}
+.experienceTextCls {
+    flex: auto;
+    max-width: 100%;
+}
+.expULListHeadCls {
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.expTimeCls {
+    color: #FF0000;
+}
+.expTechCls {
+    color: #5F4CA5;
+}
+.experienceCardSetPCls {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+.expCardLogoSectionCls {
+    box-shadow: inset 0 0 15px 10px #0000002b;
+    background-color: #6EABD8;
+    display: flex;
+    justify-content: center;
+}
+.expCardCOntSectionCls, .expCardDynSecCls {
+    background-color: #EFEFEF;
+    padding: 25px;
+    text-align: center;
+}
+.expCardPCls {
+    box-shadow: 7px 7px 15px #0000002b;
+    border-radius: 25px;
+    overflow: hidden;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    flex: 1;
+    height: fit-content;
+}
+.expCardLogoSectionCls img {
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    min-height: 140px;
+    max-width: 200px;
+    max-height: 140px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.expCardDynContBtnCls {
+    border: 0px;
+    outline: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    background-color: #6EABD8;
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    box-shadow: inset 0 0 7px 5px #0000002b;
+}
+.expCardDynContCls {
+    padding: 0px 25px 25px 25px;
+    text-align: center;
+}
+.expiTechStackPCls {
+    background-color: #EFEFEF;
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.expiTechTitleCls {
+    font-size: 24px;
+}
+.expiTechListCls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.expiTechStackCls {
+    width: 34px;
+    height: 34px;
+}
+.expiTechStackIconCls {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .expiTechTitleCls {
+        font-size: 20px;
+    }
+    .experienceCardSetPCls {
+        flex-direction: column;
+    }
+    .expULListHeadCls {
+        font-size: 20px;
+    }
+    .experienceSecTitleCls {
+        font-size: 26px;
+    }
+    .experienceParentClass {
+        gap: 35px;
+    }
+    .expCardPCls {
+        max-width: 80%;
+        width: 100%;
+        margin: auto;
+    }
+    .experienceBannerCls {
+        display: none;
+    }
+    .expCardDynContBtnCls {
+        font-size: 18px;
+    }
+    .expCardLogoSectionCls img {
+        max-width: 140px;
+        max-height: 95px;
+        min-width: 140px;
+        min-height: 95px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .expCardCOntSectionCls {
+        font-size: 20px;
+    }
+    .expCardDynContCls {
+        font-size: 16px;
+    }
+    .expCardDynSecCls, .expCardCOntSectionCls {
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .expCardPCls {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+    }
+}

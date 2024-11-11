@@ -1,0 +1,420 @@
+* {
+    scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.expSetParentCls {
+    padding: 45px 0px;
+}
+.indiExpSecLeftCls .indiExpPCls {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.indiExpSecRightCls .indiExpPCls {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.indiExpPCls, .indiExpDesPCls {
+    display: flex;
+}
+.indiExpRoleDescriptionCls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.indiExpTechStackCls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.indiExpPCls {
+    max-width: 100%;
+    overflow: hidden;
+    gap: 15px;
+}
+.indiExpTimeLogPCls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.indiExpSecLeftCls .indiExpDesPCls {
+    flex-direction: row-reverse;
+    border-radius: 99999px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.indiExpSecRightCls .indiExpDesPCls {
+    border-radius: 99999px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.indiExpDesPCls {
+    overflow: hidden;
+    background: #5F4CA5;
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+}
+.indiExpCompTechStackLogoCls {
+    width: 34px;
+    height: 34px;
+}
+.indiExpCompLogoCls {
+    width: 60px;
+    height: auto;
+}
+.expSetItemCls {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+}
+.experienceSecTitleCls {
+    padding-bottom: 50px;
+}
+.indiExpRoleContOneCls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 9999px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.indiExpRolePosCls {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.indiExpRoleDesCls {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.expIndiCardTechStackTitleCls {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.indiExpCompTechStackLogoCollectionCls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.indiExpSecLeftCls .indiExpTimeLogPCls {
+    align-items: flex-start;
+}
+.indiExpSecRightCls .indiExpTimeLogPCls {
+    align-items: flex-end;
+}
+.indiExpTimeLogPCls {
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.indiExpSecLeftCls::after, .indiExpSecRightCls::after, .expSetItemCls>div:first-child::before {
+    content: "";
+    background-color: #5F4CA5;
+    height: 65px;
+    width: 5px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.indiExpoCompNameCls {
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.expSetItemCls>div:first-child::before {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.expSetItemCls>div:last-child::after {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.indiExpCompLogoMobCls {
+    width: 45px;
+    height: auto;
+    display: none;
+}
+.indiExpRolePosMobPCls {
+    display: none;
+}
+.indiExpRolePosMobChCls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 9999px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.indiExpRolePosMobCls {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.indiExpTimePeriodMobPCls {
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #fff;    
+    flex-wrap: wrap;
+}
+.indiExpTimePeriodCountMobCls {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.indiExpTimePeriodCountMobCls::before {
+    content: "(";
+    display: block;
+    color: #fff;
+}
+.indiExpTimePeriodCountMobCls::after {
+    content: ")";
+    display: block;
+    color: #fff;
+}
+.experienceSumContentCls {
+    padding: 20px 20px;
+    background: #F0F0F0;
+    border-radius: 20px;
+    border: solid 2px #5F4CA5;
+    border-style: dashed;
+    margin: 0px 2.5%;
+}
+.expSumPointHeadPCls {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.expSumPointHeadCls {
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.expSumPointHeadCls::before {
+    content: " ";
+    display: block;
+    background-image: url("../assets/tickSymbolRound.png");
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    min-width: 25px;
+    margin-top: 2px;
+}
+.expSumPointHeadCls {
+    display: flex;
+    gap: 7px;
+}
+.experienceSumTextCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.experienceTitleBannerImgCls {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+.expSumImageHeadPCls {
+    max-width: 40%;
+}
+.expSumTimeCls {
+    color: #f30e0e;
+}
+.expSumTechCls {
+    color: #5F4CA5;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .indiExpSecLeftCls .indiExpPCls, .indiExpSecRightCls .indiExpPCls {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .indiExpSecLeftCls .indiExpTimeLogPCls, .indiExpSecRightCls .indiExpTimeLogPCls {
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 5px;
+    }
+    .indiExpSecLeftCls .indiExpDesPCls, .indiExpSecRightCls .indiExpDesPCls {
+        flex-direction: row;
+        border-radius: 99999px;
+        border-bottom-left-radius: 99999px !important;
+        border-top-left-radius: 99999px !important;
+        border-bottom-right-radius: 99999px !important;
+        border-top-right-radius: 99999px !important;
+    }
+    .indiExpSecLeftCls::after, .indiExpSecRightCls::after {
+        height: 70px;
+    }
+    .indiExpTimeLengthCls::before {
+        content: "(";
+        display: block;
+        color: #000000;
+    }
+    .indiExpTimeLengthCls::after {
+        content: ")";
+        display: block;
+        color: #000000;
+    }
+    .indiExpTimeLengthCls {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+    }
+}
+@media (max-width: 768px) {
+    .expSumPointHeadCls {
+        font-size: 17px;
+    }
+    .experienceSecTitleCls {
+        padding-bottom: 20px;
+    }
+    .indiExpDesPCls {
+        border-bottom-left-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+    }
+    .indiExpPCls {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 5px;
+    }
+    .indiExpTimeLogPCls, .indiExpRoleContOneCls {
+        display: none;
+    }
+    .indiExpSecLeftCls::after, .indiExpSecRightCls::after, .expSetItemCls>div:first-child::before {
+        height: 40px;
+    }
+    .indiExpCompLogoMobCls {
+        display: block;
+    }
+    .indiExpRolePosCls {
+        display: none;
+    }
+    .indiExpRolePosMobPCls {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    .indiExpRolePosMobCls {
+        font-size: 22px;
+    }
+    .indiExpRoleDesCls {
+        font-size: 17px;
+    }
+    .indiExpRolePosMobChCls {
+        padding: 12px;
+    }
+    .indiExpoCompNameCls {
+        font-size: 12px;
+    }
+    .indiExpRoleDescriptionCls {
+        align-items: center;
+    }
+    .indiExpRoleDesCls {
+        text-align: center;
+    }
+}
+@media (min-width: 991px) {
+    .indiExpDesPCls {
+        max-width: 60%;
+    }
+}
+@media (max-width: 991px) {
+    .expSumImageHeadPCls {
+        display: none !important;
+    }
+    .expSetItemCls, .experienceContentCls {
+        max-width: 95%;
+    }
+}
+@media (max-width: 530px) { 
+    .expSumPointHeadCls::before {
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+        min-width: 20px;    
+    }
+    .expSumPointHeadCls {
+        font-size: 15px;
+    }
+    .experienceSumContentCls {
+        margin: 0px 5%;
+    }
+    .expSetItemCls {
+        max-width: 90%;
+    }
+    .indiExpRolePosMobChCls {
+        display: none;
+    }
+    .indiExpTimePeriodMobCls {
+        text-align: center;
+    }
+    .indiExpTimePeriodMobPCls {
+        justify-content: center;
+    }
+    .indiExpTechStackCls, .indiExpCompTechStackLogoCollectionCls {
+        justify-content: center;
+        padding-bottom: 2px;
+    }
+    .skillTitleHeadCls, .experienceSecTitleCls {
+        font-size: 24px !important;
+    }
+    .skillTopicLocCls, .experienceTitleHeadIconCls {
+        width: 46px !important;
+        height: 46px !important;
+    }
+    .experienceSecTitleCls {
+        padding-bottom: 30px;
+    }
+    .indiExpRolePosMobCls {
+        font-size: 18px;
+    }
+    .indiExpTimePeriodMobPCls {
+        font-size: 16px;
+    }
+    .indiExpRoleDesCls, .expIndiCardTechStackTitleCls {
+        font-size: 15px;
+    }
+    .indiExpDesPCls {
+        padding: 15px;
+    }
+    .indiExpCompTechStackLogoCls {
+        width: 30px;
+        height: 30px;
+    }
+    .indiExpRoleDescriptionCls {
+        gap: 15px;
+    }
+}

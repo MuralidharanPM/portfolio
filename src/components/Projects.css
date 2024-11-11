@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.projectSecTitleCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.projectTitleHeadIconCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+.projectSecContainerCls {
+    padding: 40px 20px;
+    background-color: #F0F0F0;
+}
+.projectSecContainerCls {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.projectTabBtnSecCls {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.uiUxProjectBtnCls, .froneEndProjectBtnCls {
+    background-color: #2C234B;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.uiUxProjectBtnCls button, .froneEndProjectBtnCls button {
+    padding: 15px 20px;
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.projectSecContentAreaCls {
+    background-color: #5F4CA5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.projectSecContentCls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+}
+.projectSecMainParentCls {
+    flex: 1;
+    max-width: 49%;
+    min-width: 48%;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+.projectSecMainBlockCls {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #000000d1;
+}
+.projectTechStackCls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.projectMainData, .projectMainBanCls {
+    flex: 1;
+}
+.projiTechStackCls {
+    width: 34px;
+    height: 34px;
+}
+.projectMainBanCls img, .ProjTechStackIconCls {
+    max-width: 100%;
+    min-height: 100%;
+}
+.projectMainData {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    gap: 15px;
+    color: #fff;
+}
+.projectMainBanCls {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px #0000002b;
+}
+.projectLiveLinkCls {
+    display: flex;
+    justify-content: center;
+}
+.techStackIconsCls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projectLinkBtnCls {
+    border: 0px;
+    background-color: #5F4CA5;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 999999px;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.activeProjHeadSec {
+    background-color: #5F4CA5 !important;
+}
+@media (max-width: 768px) {
+    .projectSecMainParentCls {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+    .projectSecTitleCls {
+        font-size: 26px;
+    }
+}
+@media (max-width: 700px) {
+    .projectMainBanCls {
+        display: none;
+    }
+    .projectMainData {
+        align-items: center;
+        text-align: center;
+    }
+    .projectTechStackCls {
+        justify-content: center;
+    }
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+    .projectMainBanCls {
+        display: none;
+    }
+    .projectMainData {
+        align-items: center;
+        text-align: center;
+    }
+}
