@@ -297,16 +297,16 @@
     flex-direction: row-reverse;
 }
 .contactNavIconCls {
-    background-image: url('../assets/ContactAnimated/contactLogo4-4.png');
+    background-image: url('../assets/contactIcon.png');
 }
 .skillsNavIconCls {
     background-image: url('../assets/skillSetHeadLogo.png');
 }
 .experienceNavIconCls {
-    background-image: url('../assets/experienceIcon.png');
+    background-image: url('../assets/experienceIconV2.png');
 }
 .certificateNavIconCls {
-    background-image: url('../assets/CertificationsLogo/certificationsTitleLogo.png');
+    background-image: url('../assets/CertificationsLogo/certificationsTitleLogoV2.png');
 }
 .projectsNavIconCls {
     background-image: url('../assets/ProjectsTitleLogo.png');

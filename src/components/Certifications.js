@@ -1,5 +1,5 @@
 import "../components/Certifications.css";
-import certifisTitleLogo from "../assets/CertificationsLogo/certificationsTitleLogo.png";
+import certifisTitleLogo from "../assets/CertificationsLogo/certificationsTitleLogoV2.png";
 import AzureLogo from "../assets/CertificationsLogo/azureLogo.png";
 import React, { useState, useEffect } from "react";
 import FullStackLogo from "../assets/CertificationsLogo/FullStackLogo.png";

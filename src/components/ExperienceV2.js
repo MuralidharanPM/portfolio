@@ -9,6 +9,13 @@ import HTML from "../assets/SkillLogos/HTMLLogo.png";
 import CSS from "../assets/SkillLogos/CSSLogo.png";
 import Bootstrap from "../assets/SkillLogos/BootstrapLogo.png";
 import SVN from "../assets/SkillLogos/svnLogo.png";
+import GitHub from "../assets/SkillLogos/GitLogo.png";
+import ReactLogo from "../assets/SkillLogos/ReactLogo.png";
+import Java from "../assets/SkillLogos/JavaLogo.png";
+import SQL from "../assets/SkillLogos/sqlLogo.png";
+import Json from "../assets/SkillLogos/JsonLogo.png";
+import SpringMVC from "../assets/SkillLogos/SpringLogo.png";
+import RxJS from "../assets/SkillLogos/RxjsLogo.png";
 
 export default function ExperienceV2() {
     const startDate = new Date('2022-02-21');
@@ -23,7 +30,7 @@ export default function ExperienceV2() {
         roleDes: "Collaborated with clients to meet tailored project requirements, ensuring timely, defect-free deliveries aligned with functional and stylistic standards.",
         roleExp: "2 Months",
         rolePeriod: "October 2024 - Present",
-        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap, SVN]
+        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap, SVN, Java, ReactLogo, SQL, SpringMVC, Json, RxJS]
     }, {
         company: "Cognizant",
         companyLogo: CogiLogo,
@@ -31,7 +38,7 @@ export default function ExperienceV2() {
         roleDes: "Executed client-specific projects with a focus on precision and timeliness, ensuring adherence to style and functional requirements for seamless delivery.",
         roleExp: "1 Year 3 Months",
         rolePeriod: "July 2023 - September 2024",
-        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap, SVN]
+        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap, SVN, Java, ReactLogo, SQL]
     }, {
         company: "Cognizant",
         companyLogo: CogiLogo,
@@ -39,7 +46,7 @@ export default function ExperienceV2() {
         roleDes: "Developed a strong grasp of project architecture, efficiently managed codebases, and resolved bugs to enhance application reliability.",
         roleExp: "1 Year",
         rolePeriod: "July 2022 - June 2023",
-        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap, SVN]
+        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap,GitHub , Java]
     }, {
         company: "Cognizant",
         companyLogo: CogiLogo,
@@ -47,7 +54,7 @@ export default function ExperienceV2() {
         roleDes: "Gained comprehensive exposure to IT development through hands-on projects and assessments, building foundational skills across diverse technologies.",
         roleExp: "5 Months",
         rolePeriod: "February 2022 - June 2022",
-        techStack: [AngularLogo, JavaScript, Typescript, HTML, CSS, Bootstrap, SVN]
+        techStack: [AngularLogo, JavaScript, HTML, CSS, Bootstrap, GitHub]
     }];
 
     return (

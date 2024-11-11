@@ -38,9 +38,6 @@ export default function Landing({ scrollToSkill, scrollToExperience, scrollToPro
                             mobHeaderExpanded ? (
                                 <div className="laningMobViewContHeadCls">
                                     <div className="MobileHeadCtrlBtnDivCls">
-                                        <button className="MobileHeadCtrlBtnCls" id="landNavContactBtnMob" onClick={scrollToContact}>Contact<span className="contactNavIconCls mobNavTabComStyles"></span></button>
-                                    </div>
-                                    <div className="MobileHeadCtrlBtnDivCls">
                                         <button className="MobileHeadCtrlBtnCls" id="landNavSillsBtnMob" onClick={scrollToSkill}>Skills<span className="skillsNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                     <div className="MobileHeadCtrlBtnDivCls">
@@ -49,8 +46,11 @@ export default function Landing({ scrollToSkill, scrollToExperience, scrollToPro
                                     <div className="MobileHeadCtrlBtnDivCls">
                                         <button className="MobileHeadCtrlBtnCls" id="landNavCertifiBtnMob" onClick={scrollToCertifications}>Certification<span className="certificateNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
-                                    <div className="MobileHeadCtrlBtnDivCls">
+                                    {/* <div className="MobileHeadCtrlBtnDivCls">
                                         <button className="MobileHeadCtrlBtnCls" id="landNavProjectsBtnMob" onClick={scrollToProjects}>Projects<span className="projectsNavIconCls mobNavTabComStyles"></span></button>
+                                    </div> */}
+                                    <div className="MobileHeadCtrlBtnDivCls">
+                                        <button className="MobileHeadCtrlBtnCls" id="landNavContactBtnMob" onClick={scrollToContact}>Contact<span className="contactNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                 </div>
                                 ) : (<div></div>)
@@ -59,11 +59,11 @@ export default function Landing({ scrollToSkill, scrollToExperience, scrollToPro
                 </div>
                 <div className="LandingNavSecCls">
                     <div className="LandingNavContCls">
-                        <button className="landNavContBtnCls" name="landNavContactBtn" id="landNavContactBtn" onClick={scrollToContact}>Contact</button>
                         <button className="landNavContBtnCls" name="landNavSillsBtn" id="landNavSillsBtn" onClick={scrollToSkill}>Skills</button>
                         <button className="landNavContBtnCls" name="landNavExpBtn" id="landNavExpBtn" onClick={scrollToExperience}>Experience</button>
                         <button className="landNavContBtnCls" name="landNavCertifiBtn" id="landNavCertifiBtn" onClick={scrollToCertifications}>Certification</button>
-                        <button className="landNavContBtnCls" name="landNavProjectsBtn" id="landNavProjectsBtn" onClick={scrollToProjects}>Projects</button>
+                        {/* <button className="landNavContBtnCls" name="landNavProjectsBtn" id="landNavProjectsBtn" onClick={scrollToProjects}>Projects</button> */}
+                        <button className="landNavContBtnCls" name="landNavContactBtn" id="landNavContactBtn" onClick={scrollToContact}>Contact</button>
                     </div>
                 </div>
                 <div className="LandingContentSecCls">

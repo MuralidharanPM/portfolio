@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
 }
 .contactTitleHeadIconCls {
@@ -16,18 +16,11 @@
     width: 55px;
     height: 55px;
     background-size: 55px;
-    animation: slideAnimation 1.4s infinite;
+    background-image: url('../assets/contactIcon.png');
 }
 .contactSecContainerCls {
     padding: 40px 20px;
 }
-@keyframes slideAnimation {
-    0% { background-image: url('../assets/ContactAnimated/contactLogo1-4.png'); }
-    33% { background-image: url('../assets/ContactAnimated/contactLogo2-4.png'); }
-    67% { background-image: url('../assets/ContactAnimated/contactLogo3-4.png'); }
-    100% { background-image: url('../assets/ContactAnimated/contactLogo4-4.png'); }
-}
-
 .mailDropContCls, .socialHandleLogoCls {
     display: flex;
     flex-direction: row;
