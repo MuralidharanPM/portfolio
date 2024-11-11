@@ -26,7 +26,7 @@ function App() {
         />
         <div ref={skillRef}><Skill /></div>
         <div ref={experienceRef}><ExperienceV2/></div>
-        <div ref={projectsRef}><Projects /></div>
+        {/* <div ref={projectsRef}><Projects /></div> */}
         <div ref={certificationsRef}><Certifications /></div>
         <div ref={contactRef}><Contact /></div>
       </div>

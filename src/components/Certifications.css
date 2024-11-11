@@ -158,14 +158,44 @@
         font-size: 26px;
     }
 }
-@media (max-width: 420px) {
-    .landingMainBtnHeadCls {
-        text-wrap: wrap !important;
+@media (max-width: 768px) {
+    .certifiItemsLogoCls {
+        display: none;
     }
-    .projectTabBtnSecCls {
-        gap: 20px !important;
+    .certifiSecTitleCls {
+        font-size: 26px;
     }
-    .uiUxProjectBtnCls button, .froneEndProjectBtnCls button {
-        padding: 10px 15px !important;
+}
+@media (max-width: 530px) {
+    .certifiSecTitleCls {
+        font-size: 24px;
+    }
+    .certifiTitleHeadIconCls {
+        width: 46px !important;
+        height: 46px !important;
+        max-width: 46px;
+        max-height: 46px;
+    }
+    .certificateContPCls {
+        font-size: 19px;
+    }
+    .certifiTitleContCls {
+        font-size: 16px;
+    }
+    .certifiTxtCls {
+        font-size: 17px;
+    }
+    .certifiTechStackLogoIconCls, .certifiTechStackLogoListCls {
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .certifiMainBtnLogoImgCls, .certifiMainBtnLogoCls {
+        width: 42px;
+        height: 42px;
+    }
+    .certifiBtnCls {
+        padding: 12px 7px;
     }
 }

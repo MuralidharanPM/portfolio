@@ -181,3 +181,21 @@
         max-width: 100%;
     }
 }
+@media (max-width:530px) {
+    .contactSecTitleCls {
+        font-size: 24px;
+    }
+    .contactTitleHeadIconCls {
+        width: 46px !important;
+        height: 46px !important;
+        max-width: 46px;
+        max-height: 46px;
+        background-size: 46px;
+    }
+    .contactTextOneCls {
+        font-size: 21px;
+    }
+    .contactTextTwoCls, .contactTextThreeCls {
+        font-size: 18px;
+    }
+}
