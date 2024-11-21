@@ -17,7 +17,7 @@ export default function Landing({ scrollToSkill, scrollToExperience, scrollToPro
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    };    
+    };
     return (
         <>
             <div className="LandingParentSecCls">
@@ -53,7 +53,7 @@ export default function Landing({ scrollToSkill, scrollToExperience, scrollToPro
                                         <button className="MobileHeadCtrlBtnCls" id="landNavContactBtnMob" onClick={scrollToContact}>Contact<span className="contactNavIconCls mobNavTabComStyles"></span></button>
                                     </div>
                                 </div>
-                                ) : (<div></div>)
+                            ) : (<div></div>)
                         }
                     </div>
                 </div>
