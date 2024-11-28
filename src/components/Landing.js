@@ -1,4 +1,4 @@
-import LandingBanner from "../assets/landPicProp1.png";
+import LandingBanner from "../assets/landPicProp2.png";
 import HifiHands from "../assets/hnadIcon.png";
 import ContactMainBtnIcon from "../assets/contactIcon.png";
 import DresMainBtnIcon from "../assets/downloadResumeIcon.png";
