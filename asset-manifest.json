@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ec200f19.css",
-    "main.js": "/portfolio/static/js/main.8233c630.js",
+    "main.css": "/portfolio/static/css/main.a5dadccd.css",
+    "main.js": "/portfolio/static/js/main.09da1d1e.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/landPicProp2.png": "/portfolio/static/media/landPicProp2.5b27cc4ac7dee8ccd6ff.png",
     "static/media/autoDealsLogo.PNG": "/portfolio/static/media/autoDealsLogo.282c1f922dba7cb48430.PNG",
     "static/media/learningAllianceLogo.PNG": "/portfolio/static/media/learningAllianceLogo.14e414d76a2dd5e48a9a.PNG",
     "static/media/ProjectsTitleLogo.png": "/portfolio/static/media/ProjectsTitleLogo.58fa66d7b3c0c654c6db.png",
     "static/media/expPicDrop1.png": "/portfolio/static/media/expPicDrop1.7d7e9bd96a17f44696fc.png",
-    "static/media/landPicProp1.png": "/portfolio/static/media/landPicProp1.63fa5d60b61ac68c695e.png",
     "static/media/PortfolioLogo.PNG": "/portfolio/static/media/PortfolioLogo.5fe8826db12e4866e24c.PNG",
     "static/media/rockPaperScissorLogo.PNG": "/portfolio/static/media/rockPaperScissorLogo.49238246833e08501703.PNG",
     "static/media/experienceIconV2.png": "/portfolio/static/media/experienceIconV2.5337f98e1b5e145063dd.png",
@@ -58,12 +58,12 @@
     "static/media/burgerIonActive.png": "/portfolio/static/media/burgerIonActive.08edd68fd6078eeaf4d3.png",
     "static/media/NameLogo.png": "/portfolio/static/media/NameLogo.476d3c0b1351cf150dd8.png",
     "index.html": "/portfolio/index.html",
-    "main.ec200f19.css.map": "/portfolio/static/css/main.ec200f19.css.map",
-    "main.8233c630.js.map": "/portfolio/static/js/main.8233c630.js.map",
+    "main.a5dadccd.css.map": "/portfolio/static/css/main.a5dadccd.css.map",
+    "main.09da1d1e.js.map": "/portfolio/static/js/main.09da1d1e.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec200f19.css",
-    "static/js/main.8233c630.js"
+    "static/css/main.a5dadccd.css",
+    "static/js/main.09da1d1e.js"
   ]
 }
