@@ -78,18 +78,6 @@ export default function Projects() {
         fontColor: "#fff"
     }, {
         projectType: "Frontend Project",
-        projectName: "Rock Paper Scissor - Website",
-        projectBanner: RockPaperScissor,
-        projectDes: "Open api is added using the pincode the weather details are fetched.",
-        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
-        projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/",
-        cardBackColour: "#5f4ca5",
-        cardContBackColour: "rgb(33 12 69)",
-        cardContTextColor: "#fff",
-        folderColor: "#14c04f",
-        fontColor: "#fff"
-    }, {
-        projectType: "Frontend Project",
         projectName: "Learning Alliance E-Learning website",
         projectBanner: LearningAlliance,
         projectDes: "Open api is added using the pincode the weather details are fetched.",
@@ -98,6 +86,18 @@ export default function Projects() {
         cardBackColour: "#7e7e7f",
         cardContBackColour: "rgb(245 247 250)",
         cardContTextColor: "#000",
+        folderColor: "#14c04f",
+        fontColor: "#fff"
+    }, {
+        projectType: "Frontend Project",
+        projectName: "Rock Paper Scissor - Website",
+        projectBanner: RockPaperScissor,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
+        projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/",
+        cardBackColour: "#5f4ca5",
+        cardContBackColour: "rgb(33 12 69)",
+        cardContTextColor: "#fff",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
