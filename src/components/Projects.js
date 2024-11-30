@@ -84,7 +84,7 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/",
         cardBackColour: "#5f4ca5",
-        cardContBackColour: "#5f4ca5",
+        cardContBackColour: "rgb(33 12 69)",
         cardContTextColor: "#fff",
         folderColor: "#14c04f",
         fontColor: "#fff"
@@ -96,8 +96,8 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/learningAlliance/",
         cardBackColour: "#7e7e7f",
-        cardContBackColour: "#7e7e7f",
-        cardContTextColor: "#fff",
+        cardContBackColour: "rgb(245 247 250)",
+        cardContTextColor: "#000",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
@@ -108,8 +108,8 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/dolearn/",
         cardBackColour: "#6673d3",
-        cardContBackColour: "#6673d3",
-        cardContTextColor: "#fff",
+        cardContBackColour: "rgb(238 240 254)",
+        cardContTextColor: "#000",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
@@ -120,7 +120,7 @@ export default function Projects() {
         projectTechStac: [Figma, Spline, PhotoShop],
         projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership",
         cardBackColour: "rgb(195 191 191)",
-        cardContBackColour: "rgb(195 191 191)",
+        cardContBackColour: "rgb(240 240 240)",
         cardContTextColor: "#000",
         folderColor: "#f3f324",
         fontColor: "#000"
@@ -132,7 +132,7 @@ export default function Projects() {
         projectTechStac: [Figma, Spline, PhotoShop],
         projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1",
         cardBackColour: "#f0f0f0",
-        cardContBackColour: "#f0f0f0",
+        cardContBackColour: "rgb(255 255 255)",
         cardContTextColor: "#000",
         folderColor: "#f3f324",
         fontColor: "#000"
