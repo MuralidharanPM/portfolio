@@ -64,7 +64,7 @@ export default function Projects() {
 
     const fullStackProjList = [];
 
-    const allProjects = [ {
+    const allProjects = [{
         projectType: "Frontend Project",
         projectName: "Weather App - Get weather with zipcode",
         projectBanner: WeatherApp,
@@ -90,7 +90,7 @@ export default function Projects() {
         fontColor: "#fff"
     }, {
         projectType: "Frontend Project",
-        projectName: "Rock Paper Scissor - Website",
+        projectName: "Rock Paper Scissor - Game Website",
         projectBanner: RockPaperScissor,
         projectDes: "Open api is added using the pincode the weather details are fetched.",
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
@@ -102,7 +102,7 @@ export default function Projects() {
         fontColor: "#fff"
     }, {
         projectType: "Frontend Project",
-        projectName: "DoLearn E-Learning website",
+        projectName: "DoLearn Startup E-Learning website",
         projectBanner: DoLearn,
         projectDes: "Open api is added using the pincode the weather details are fetched.",
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
@@ -143,23 +143,25 @@ export default function Projects() {
             <div className="projectHeadCls">
                 <div className="projectSecParCls">
                     <div className="projectSecCls">
-                        <div className="skillTitleHeadCls">
+                        <div className="projectTitleHeadCls">
                             Projects<span className="projectTitleLogoCls"><img className="projectTopicLocCls" src={ProjectsTitleLogo} alt="Project Set Head Topic Logo"></img></span>
                         </div>
                         <div className="projectCardAreaCls">
                             <div className="projectCardPCls">
                                 {
                                     allProjects.map((item) => (
-                                        <div className="proCardPCls" key={item.id}>
-                                            <div className="proCardCatyCls" style={{ backgroundColor: item.folderColor, color: item.fontColor }}>{item.projectType}</div>
-                                            <div className="proCardCCls" style={{ backgroundColor: item.cardBackColour }}>
-                                                <div className="proCardThumbCls">
-                                                    <img className="proCardThumbNailCls" src={item.projectBanner} alt="Project Card Image Thumbnail" />
-                                                </div>
-                                                <div className="proCardContCls">
-                                                    <div className="proCardProjDetailsCls" style={{ backgroundColor: item.cardContBackColour, color: item.cardContTextColor }}>
-                                                        <div className="proCardTitleCls">{item.projectName}</div>
-                                                        <div className="proCardContCls">{item.projectDes}</div>
+                                        <div className="proCardHeadCls">
+                                            <div className="proCardPCls" key={item.id}>
+                                                <div className="proCardCatyCls" style={{ backgroundColor: item.folderColor, color: item.fontColor }}>{item.projectType}</div>
+                                                <div className="proCardCCls" style={{ backgroundColor: item.cardBackColour }}>
+                                                    <div className="proCardThumbCls">
+                                                        <img className="proCardThumbNailCls" src={item.projectBanner} alt="Project Card Image Thumbnail" />
+                                                    </div>
+                                                    <div className="proCardContCls">
+                                                        <div className="proCardProjDetailsCls" style={{ backgroundColor: item.cardContBackColour, color: item.cardContTextColor }}>
+                                                            <div className="proCardTitleCls">{item.projectName}</div>
+                                                            <div className="proCardContCls">{item.projectDes}</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
