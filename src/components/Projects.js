@@ -22,8 +22,6 @@ import Spline from "../assets/SkillLogos/splineLogo.png";
 import PhotoShop from "../assets/SkillLogos/PhotoShopLogo.png";
 
 export default function Projects() {
-    const [projectDetails, setProjectTabToDisplay] = useState('');
-    const [activeProjTab, setActiveProjTab] = useState('FrontEnd');
 
     const uiUxProjList = [{
         projectName: "AutoDeals - Car Dealership website Design",
@@ -35,7 +33,7 @@ export default function Projects() {
         projectBanner: Portfolio,
         projectTechStac: [Figma, Spline, PhotoShop],
         projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1"
-    }]
+    }];
 
     const frontEndProjList = [{
         projectName: "Rock Paper Scissor - Website",
@@ -62,129 +60,103 @@ export default function Projects() {
         projectBanner: DoLearn,
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/dolearn/"
+    }];
+
+    const fullStackProjList = [];
+
+    const allProjects = [{
+        projectType: "UI/UX Project",
+        projectName: "AutoDeals - Car Dealership Design",
+        projectBanner: AutoDeals,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [Figma, Spline, PhotoShop],
+        projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership",
+        cardBackColour: "rgb(195 191 191)",
+        cardContBackColour: "rgb(195 191 191)",
+        cardContTextColor: "#000"
+    }, {
+        projectType: "UI/UX Project",
+        projectName: "Portfolio - Beginner Website Design",
+        projectBanner: Portfolio,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [Figma, Spline, PhotoShop],
+        projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1",
+        cardBackColour: "#f0f0f0",
+        cardContBackColour: "#f0f0f0",
+        cardContTextColor: "#000"
+    }, {
+        projectType: "Frontend Project",
+        projectName: "Weather App - Get weather with zipcode",
+        projectBanner: WeatherApp,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
+        projectLiveLink: "https://muralidharanpm.github.io/weatherapp/",
+        cardBackColour: "#fff2d7",
+        cardContBackColour: "#fff2d7",
+        cardContTextColor: "#000"
+    }, {
+        projectType: "Frontend Project",
+        projectName: "Rock Paper Scissor - Website",
+        projectBanner: RockPaperScissor,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
+        projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/",
+        cardBackColour: "#5f4ca5",
+        cardContBackColour: "#5f4ca5",
+        cardContTextColor: "#fff"
+    }, {
+        projectType: "Frontend Project",
+        projectName: "Learning Alliance E-Learning website",
+        projectBanner: LearningAlliance,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
+        projectLiveLink: "https://muralidharanpm.github.io/learningAlliance/",
+        cardBackColour: "#7e7e7f",
+        cardContBackColour: "#7e7e7f",
+        cardContTextColor: "#fff"
+    }, {
+        projectType: "Frontend Project",
+        projectName: "DoLearn E-Learning website",
+        projectBanner: DoLearn,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
+        projectLiveLink: "https://muralidharanpm.github.io/dolearn/",
+        cardBackColour: "#6673d3",
+        cardContBackColour: "#6673d3",
+        cardContTextColor: "#fff"
     }]
-
-    const fullStackProjList = []
-
-    useEffect(() => {
-        projectBtnFuncReturn("FrontEnd");
-    }, []);
-
-    const projectBtnFuncReturn = (projButtonSet) => {
-        setActiveProjTab(projButtonSet);
-        if (projButtonSet === "UIUX") {
-            setProjectTabToDisplay(
-                <div className="projectSecContentCls">
-                    {uiUxProjList.map((item, index) => (
-                        <div className="projectSecMainParentCls" style={{
-                            'background-image': `url(${item.projectBanner})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            width: '100%'
-                        }}>
-                            <div className="projectSecMainBlockCls">
-                                <div className="projectMainData">
-                                    <div className="projectTitleCls">{item.projectName}</div>
-                                    <div className="projectTechStackCls">
-                                        <div className="techStackTitleCls">Tech Stack : </div>
-                                        <div className="techStackIconsCls">
-                                            {(item.projectTechStac).map((image, index) => (
-                                                <span className="projiTechStackCls"><img className="ProjTechStackIconCls" src={image} alt="Skill Set Head Topic Logo"></img></span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="projectLiveLinkCls">
-                                        <button className="projectLinkBtnCls" onClick={() => window.open(item.projectLiveLink)}>Explore Live</button>
-                                    </div>
-                                </div>
-                                <div className="projectMainBanCls">
-                                    <img className="projectThumbnailCls" src={item.projectBanner} alt="Skill Set Head Topic Logo"></img>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            )
-        } else if (projButtonSet === "FrontEnd") {
-            setProjectTabToDisplay(
-                <div className="projectSecContentCls">
-                    {frontEndProjList.map((item, index) => (
-                        <div className="projectSecMainParentCls" style={{
-                            'background-image': `url(${item.projectBanner})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            width: '100%'
-                        }}>
-                        <div className="projectSecMainBlockCls">
-                            <div className="projectMainData">
-                                <div className="projectTitleCls">{item.projectName}</div>
-                                <div className="projectTechStackCls">
-                                    <div className="techStackTitleCls">Tech Stack : </div>
-                                    <div className="techStackIconsCls">
-                                        {(item.projectTechStac).map((image, index) => (
-                                            <span className="projiTechStackCls"><img className="ProjTechStackIconCls" src={image} alt="Skill Set Head Topic Logo"></img></span>
-                                        ))}
-                                    </div>
-                                </div>
-                                <div className="projectLiveLinkCls">
-                                    <button className="projectLinkBtnCls" onClick={() => window.open(item.projectLiveLink)}>Explore Live</button>
-                                </div>
-                            </div>
-                            <div className="projectMainBanCls">
-                                <img className="projectThumbnailCls" src={item.projectBanner} alt="Skill Set Head Topic Logo"></img>
-                            </div>
-                        </div>
-                        </div>
-                    ))}
-                </div>
-            )
-        } else if (projButtonSet === "FullStack") {
-            setProjectTabToDisplay(
-                <div className="projectSecContentCls">
-                    {fullStackProjList.map((item, index) => (
-                        <div className="projectSecMainParentCls">
-                            <div className="projectSecMainBlockCls">
-                                <div className="projectMainData">
-                                    <div className="projectTitleCls">{item.projectName}</div>
-                                    <div className="projectTechStackCls">
-                                        <div className="techStackTitleCls">Tech Stack : </div>
-                                        <div className="techStackIconsCls">
-                                            {(item.projectTechStac).map((image, index) => (
-                                                <span className="projiTechStackCls"><img className="ProjTechStackIconCls" src={image} alt="Skill Set Head Topic Logo"></img></span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="projectLiveLinkCls">
-                                        <button className="projectLinkBtnCls" onClick={() => window.open(item.projectLiveLink)}>Explore Live</button>
-                                    </div>
-                                </div>
-                                <div className="projectMainBanCls">
-                                    <img className="projectThumbnailCls" src={item.projectBanner} alt="Skill Set Head Topic Logo"></img>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            )
-        }
-    }
 
     return (
         <>
-            <div className="projectSecContainerCls">
-                <div className="projectSecTitleCls">
-                    Projects<span><img className="projectTitleHeadIconCls" src={ProjectsTitleLogo} alt="Skill Set Head Topic Logo"></img></span>
-                </div>
-                <div className="projectSecContentPCls">
-                    <div className="projectTabBtnSecCls">
-                        <div className={activeProjTab === 'UIUX' ? 'uiUxProjectBtnCls activeProjHeadSec' : 'uiUxProjectBtnCls'}>
-                            <button onClick={() => projectBtnFuncReturn("UIUX")}>UI UX</button>
+            <div className="projectHeadCls">
+                <div className="projectSecParCls">
+                    <div className="projectSecCls">
+                        <div className="skillTitleHeadCls">
+                            Projects<span className="projectTitleLogoCls"><img className="projectTopicLocCls" src={ProjectsTitleLogo} alt="Project Set Head Topic Logo"></img></span>
                         </div>
-                        <div className={activeProjTab === 'FrontEnd' ? 'froneEndProjectBtnCls activeProjHeadSec' : 'froneEndProjectBtnCls'}>
-                            <button onClick={() => projectBtnFuncReturn("FrontEnd")}>Front-end</button>
+                        <div className="projectCardAreaCls">
+                            <div className="projectCardPCls">
+                                {
+                                    allProjects.map((item) => (
+                                        <div className="proCardPCls" key={item.id}>
+                                            <div className="proCardCatyCls">{item.projectType}</div>
+                                            <div className="proCardCCls" style={{ backgroundColor: item.cardBackColour }}>
+                                                <div className="proCardThumbCls">
+                                                    <img className="proCardThumbNailCls" src={item.projectBanner} alt="Project Card Image Thumbnail" />
+                                                </div>
+                                                <div className="proCardContCls">
+                                                    <div className="proCardProjDetailsCls" style={{ backgroundColor: item.cardContBackColour, color: item.cardContTextColor }}>
+                                                        <div className="proCardTitleCls">{item.projectName}</div>
+                                                        <div className="proCardContCls">{item.projectDes}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
-                    <div className="projectSecContentAreaCls">{projectDetails}</div>
                 </div>
             </div>
         </>
