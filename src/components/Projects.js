@@ -85,7 +85,7 @@ export default function Projects() {
         projectLiveLink: "https://muralidharanpm.github.io/learningAlliance/",
         cardBackColour: "#7e7e7f",
         cardContBackColour: "#7e7e7f",
-        cardContTextColor: "#000",
+        cardContTextColor: "#fff",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
@@ -109,7 +109,7 @@ export default function Projects() {
         projectLiveLink: "https://muralidharanpm.github.io/dolearn/",
         cardBackColour: "#6673d3",
         cardContBackColour: "#6673d3",
-        cardContTextColor: "#000",
+        cardContTextColor: "#fff",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
