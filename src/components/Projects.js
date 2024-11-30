@@ -71,9 +71,11 @@ export default function Projects() {
         projectDes: "Open api is added using the pincode the weather details are fetched.",
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
         projectLiveLink: "https://muralidharanpm.github.io/weatherapp/",
-        cardBackColour: "#fff2d7",
+        cardBackColour: "rgb(226 186 102)",
         cardContBackColour: "#fff2d7",
-        cardContTextColor: "#000"
+        cardContTextColor: "#000",
+        folderColor: "#14c04f",
+        fontColor: "#fff"
     }, {
         projectType: "Frontend Project",
         projectName: "Rock Paper Scissor - Website",
@@ -83,7 +85,9 @@ export default function Projects() {
         projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/",
         cardBackColour: "#5f4ca5",
         cardContBackColour: "#5f4ca5",
-        cardContTextColor: "#fff"
+        cardContTextColor: "#fff",
+        folderColor: "#14c04f",
+        fontColor: "#fff"
     }, {
         projectType: "Frontend Project",
         projectName: "Learning Alliance E-Learning website",
@@ -93,7 +97,9 @@ export default function Projects() {
         projectLiveLink: "https://muralidharanpm.github.io/learningAlliance/",
         cardBackColour: "#7e7e7f",
         cardContBackColour: "#7e7e7f",
-        cardContTextColor: "#fff"
+        cardContTextColor: "#fff",
+        folderColor: "#14c04f",
+        fontColor: "#fff"
     }, {
         projectType: "Frontend Project",
         projectName: "DoLearn E-Learning website",
@@ -103,7 +109,9 @@ export default function Projects() {
         projectLiveLink: "https://muralidharanpm.github.io/dolearn/",
         cardBackColour: "#6673d3",
         cardContBackColour: "#6673d3",
-        cardContTextColor: "#fff"
+        cardContTextColor: "#fff",
+        folderColor: "#14c04f",
+        fontColor: "#fff"
     }, {
         projectType: "UI/UX Project",
         projectName: "AutoDeals - Car Dealership Design",
@@ -113,7 +121,9 @@ export default function Projects() {
         projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership",
         cardBackColour: "rgb(195 191 191)",
         cardContBackColour: "rgb(195 191 191)",
-        cardContTextColor: "#000"
+        cardContTextColor: "#000",
+        folderColor: "#f3f324",
+        fontColor: "#000"
     }, {
         projectType: "UI/UX Project",
         projectName: "Portfolio - Beginner Website Design",
@@ -123,7 +133,9 @@ export default function Projects() {
         projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1",
         cardBackColour: "#f0f0f0",
         cardContBackColour: "#f0f0f0",
-        cardContTextColor: "#000"
+        cardContTextColor: "#000",
+        folderColor: "#f3f324",
+        fontColor: "#000"
     }]
 
     return (
@@ -139,7 +151,7 @@ export default function Projects() {
                                 {
                                     allProjects.map((item) => (
                                         <div className="proCardPCls" key={item.id}>
-                                            <div className="proCardCatyCls">{item.projectType}</div>
+                                            <div className="proCardCatyCls" style={{ backgroundColor: item.folderColor, color: item.fontColor }}>{item.projectType}</div>
                                             <div className="proCardCCls" style={{ backgroundColor: item.cardBackColour }}>
                                                 <div className="proCardThumbCls">
                                                     <img className="proCardThumbNailCls" src={item.projectBanner} alt="Project Card Image Thumbnail" />
