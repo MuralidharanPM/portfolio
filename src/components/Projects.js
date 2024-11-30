@@ -64,27 +64,7 @@ export default function Projects() {
 
     const fullStackProjList = [];
 
-    const allProjects = [{
-        projectType: "UI/UX Project",
-        projectName: "AutoDeals - Car Dealership Design",
-        projectBanner: AutoDeals,
-        projectDes: "Open api is added using the pincode the weather details are fetched.",
-        projectTechStac: [Figma, Spline, PhotoShop],
-        projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership",
-        cardBackColour: "rgb(195 191 191)",
-        cardContBackColour: "rgb(195 191 191)",
-        cardContTextColor: "#000"
-    }, {
-        projectType: "UI/UX Project",
-        projectName: "Portfolio - Beginner Website Design",
-        projectBanner: Portfolio,
-        projectDes: "Open api is added using the pincode the weather details are fetched.",
-        projectTechStac: [Figma, Spline, PhotoShop],
-        projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1",
-        cardBackColour: "#f0f0f0",
-        cardContBackColour: "#f0f0f0",
-        cardContTextColor: "#000"
-    }, {
+    const allProjects = [ {
         projectType: "Frontend Project",
         projectName: "Weather App - Get weather with zipcode",
         projectBanner: WeatherApp,
@@ -124,6 +104,26 @@ export default function Projects() {
         cardBackColour: "#6673d3",
         cardContBackColour: "#6673d3",
         cardContTextColor: "#fff"
+    }, {
+        projectType: "UI/UX Project",
+        projectName: "AutoDeals - Car Dealership Design",
+        projectBanner: AutoDeals,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [Figma, Spline, PhotoShop],
+        projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership",
+        cardBackColour: "rgb(195 191 191)",
+        cardContBackColour: "rgb(195 191 191)",
+        cardContTextColor: "#000"
+    }, {
+        projectType: "UI/UX Project",
+        projectName: "Portfolio - Beginner Website Design",
+        projectBanner: Portfolio,
+        projectDes: "Open api is added using the pincode the weather details are fetched.",
+        projectTechStac: [Figma, Spline, PhotoShop],
+        projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1",
+        cardBackColour: "#f0f0f0",
+        cardContBackColour: "#f0f0f0",
+        cardContTextColor: "#000"
     }]
 
     return (
