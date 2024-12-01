@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.93e1e986.css",
-    "main.js": "/portfolio/static/js/main.097d06bd.js",
+    "main.js": "/portfolio/static/js/main.8a7a49e8.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/landPicProp2.png": "/portfolio/static/media/landPicProp2.5b27cc4ac7dee8ccd6ff.png",
+    "static/media/contactBanner.png": "/portfolio/static/media/contactBanner.f24ec1815cec7a928c03.png",
     "static/media/autoDealsLogo.PNG": "/portfolio/static/media/autoDealsLogo.282c1f922dba7cb48430.PNG",
     "static/media/learningAllianceLogo.PNG": "/portfolio/static/media/learningAllianceLogo.14e414d76a2dd5e48a9a.PNG",
     "static/media/ProjectsTitleLogo.png": "/portfolio/static/media/ProjectsTitleLogo.58fa66d7b3c0c654c6db.png",
@@ -59,11 +60,11 @@
     "static/media/NameLogo.png": "/portfolio/static/media/NameLogo.476d3c0b1351cf150dd8.png",
     "index.html": "/portfolio/index.html",
     "main.93e1e986.css.map": "/portfolio/static/css/main.93e1e986.css.map",
-    "main.097d06bd.js.map": "/portfolio/static/js/main.097d06bd.js.map",
+    "main.8a7a49e8.js.map": "/portfolio/static/js/main.8a7a49e8.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93e1e986.css",
-    "static/js/main.097d06bd.js"
+    "static/js/main.8a7a49e8.js"
   ]
 }
