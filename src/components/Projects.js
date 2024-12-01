@@ -64,6 +64,10 @@ export default function Projects() {
 
     const fullStackProjList = [];
 
+    const handleClick = (link) => {
+        window.open(link, "_blank");
+    }
+
     const allProjects = [{
         projectType: "Frontend Project",
         projectName: "Weather App - Get weather with zipcode",
@@ -72,8 +76,8 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json, RestAPI],
         projectLiveLink: "https://muralidharanpm.github.io/weatherapp/",
         cardBackColour: "rgb(226 186 102)",
-        cardContBackColour: "rgb(226 186 102)",
-        cardContTextColor: "#fff",
+        cardContBackColour: "#fff2d7",
+        cardContTextColor: "#000",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
@@ -84,8 +88,8 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/learningAlliance/",
         cardBackColour: "#7e7e7f",
-        cardContBackColour: "#7e7e7f",
-        cardContTextColor: "#fff",
+        cardContBackColour: "rgb(245 247 250)",
+        cardContTextColor: "#000",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
@@ -96,7 +100,7 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/rockPaperScissor/",
         cardBackColour: "#5f4ca5",
-        cardContBackColour: "#5f4ca5",
+        cardContBackColour: "rgb(33 12 69)",
         cardContTextColor: "#fff",
         folderColor: "#14c04f",
         fontColor: "#fff"
@@ -108,8 +112,8 @@ export default function Projects() {
         projectTechStac: [ReactLogo, JavaScript, Typescript, GitHub, HTML, CSS, Bootstrap, Json],
         projectLiveLink: "https://muralidharanpm.github.io/dolearn/",
         cardBackColour: "#6673d3",
-        cardContBackColour: "#6673d3",
-        cardContTextColor: "#fff",
+        cardContBackColour: "rgb(238 240 254)",
+        cardContTextColor: "#000",
         folderColor: "#14c04f",
         fontColor: "#fff"
     }, {
@@ -120,7 +124,7 @@ export default function Projects() {
         projectTechStac: [Figma, Spline, PhotoShop],
         projectLiveLink: "https://www.behance.net/gallery/201191549/AutoDeals-Car-Dealership",
         cardBackColour: "rgb(195 191 191)",
-        cardContBackColour: "rgb(195 191 191)",
+        cardContBackColour: "rgb(240 240 240)",
         cardContTextColor: "#000",
         folderColor: "#f3f324",
         fontColor: "#000"
@@ -132,7 +136,7 @@ export default function Projects() {
         projectTechStac: [Figma, Spline, PhotoShop],
         projectLiveLink: "https://www.behance.net/gallery/210670013/Portfolio-website-wireframe-for-beginners-type-1",
         cardBackColour: "#f0f0f0",
-        cardContBackColour: "#f0f0f0",
+        cardContBackColour: "rgb(255 255 255)",
         cardContTextColor: "#000",
         folderColor: "#f3f324",
         fontColor: "#000"
@@ -158,9 +162,13 @@ export default function Projects() {
                                                         <img className="proCardThumbNailCls" src={item.projectBanner} alt="Project Card Image Thumbnail" />
                                                     </div>
                                                     <div className="proCardContCls">
-                                                        <div className="proCardProjDetailsCls" style={{ backgroundColor: item.cardContBackColour, color: item.cardContTextColor }}>
-                                                            <div className="proCardTitleCls">{item.projectName}</div>
+                                                        <div className="proCardProjDetailsCls" style={{ color: item.cardContTextColor }}>
+                                                            <div className="proCardTitleCls">
+                                                                {item.projectName}</div>
                                                             <div className="proCardContCls">{item.projectDes}</div>
+                                                        </div>
+                                                        <div className="proCardLiveLinkCls">
+                                                            <button className="proCardLiveLinkBtnCls" onClick={() => handleClick(item.projectLiveLink)}>Live Link</button>
                                                         </div>
                                                     </div>
                                                 </div>
