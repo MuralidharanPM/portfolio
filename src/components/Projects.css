@@ -116,9 +116,6 @@
     font-family: 'Bree Serif', serif;
     font-weight: 400;
 }
-.ContactLocCls {
-    max-width: 100%;
-}
 @media (max-width: 768px) {
     .projectTitleHeadCls {
         font-size: 26px;

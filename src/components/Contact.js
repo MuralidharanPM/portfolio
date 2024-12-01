@@ -6,11 +6,10 @@ import Gmail from "../assets/Contact/gmailContLogo.png";
 import ContactBanner from "../assets/contactBanner.png";
 
 export default function Contact() {
-
     const socialLinks = [{
         name: "LinkedIn",
         logo: LinkedIn,
-        link: "https://www.google.com/"
+        link: "https://www.linkedin.com/in/muralidharan-p-m-842450212/"
     }, {
         name: "GitHub",
         logo: GitHub,
@@ -19,11 +18,7 @@ export default function Contact() {
         name: "Naukri",
         logo: Naukri,
         link: "https://www.google.com/"
-    }, {
-        name: "Gmail",
-        logo: Gmail,
-        link: "https://www.google.com/"
-    }];
+    }]
 
     return (
         <>
@@ -37,8 +32,7 @@ export default function Contact() {
                             <div className="contactTextOneCls">Reach out to me!</div>
                             <div className="contactTextTwoCls">Discuss a project or just want to say hi? My Inbox is open for all.</div>
                             <div className="contactTextThreeCls">Open for opportunities : Yes</div>
-                            <div className="contactSocialSecCls">
-                                <div></div>
+                            <div className="contactSocialSecCls">Email : mugilmugilone@gmail.com
                             </div>
                         </div>
                         <div className="mailDropContCls">
