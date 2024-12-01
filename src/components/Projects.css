@@ -105,6 +105,7 @@
 .proCardLiveLinkCls {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
 .proCardLiveLinkBtnCls {
     padding: 8px 18px;
