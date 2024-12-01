@@ -3,6 +3,7 @@ import LinkedIn from "../assets/Contact/LinkedInContLogo.png";
 import GitHub from "../assets/Contact/gitHubContLogo.png";
 import Naukri from "../assets/Contact/naukriContLogo.png";
 import Gmail from "../assets/Contact/gmailContLogo.png";
+import ContactBanner from "../assets/contactBanner.png";
 
 export default function Contact() {
 
@@ -47,13 +48,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="contactMailParentCls">
-                        <div className="contactMailSubCls">
-                            <div className="contactMailTitleCls">Drop a Mail</div>
-                            <input placeholder="Enter your email id"></input>
-                            <input placeholder="Enter your name"></input>
-                            <input placeholder="Enter your message" className="contactBoxMessageCls"></input>
-                            <button className="dropMailBtnCls">Send<span className="mailSendBtnLogo"></span></button>
-                        </div>
+                        <img className="ContactLocCls" src={ContactBanner} alt="bannerContactPage"></img>
                     </div>
                 </div>
             </div>
